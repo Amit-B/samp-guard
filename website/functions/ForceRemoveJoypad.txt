@@ -1,0 +1,16 @@
+﻿func|ForceRemoveJoypad(playerid);
+status|0
+category|Security
+desc|הסרת ג'ויפד עבור שחקן. משנה באופן מיידי את הגדרת השימוש בג'ויפד שבתפריט ומאפשר לשחקן לשחק עם העכבר בלבד.
+changelog1|1.0 Beta 7:נוצרה רשמית
+changelog2|1.0 Beta 8:שם הפונקציה שונה מ-RemoveJoypad ל-ForceRemoveJoypad
+param1|השחקן להסרת הג'ויפד
+public TimerOfTenSeconds()
+{
+	for(new i = 0; i < MAX_PLAYERS; i++) if(IsPlayerConnected(i) && IsPlayerUsingJoypad(i))
+	{
+		SendClientMessage(i,0xffffffaa,"Joypad is not allowed in this server.");
+		ForceRemoveJoypad(i);
+	}
+	return 1;
+}

@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ButtonChangeNick" xml:space="preserve">
+    <value>Change nickname</value>
+  </data>
+  <data name="ButtonConnect" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="ButtonDisconnect" xml:space="preserve">
+    <value>Disconnect</value>
+  </data>
+  <data name="ErrorAlreadyActive" xml:space="preserve">
+    <value>SA-MP Guard is already active.</value>
+  </data>
+  <data name="ErrorAlreadySamp" xml:space="preserve">
+    <value>SA-MP is already active on this computer.</value>
+  </data>
+  <data name="ErrorCleo1" xml:space="preserve">
+    <value>Cleo mods folder is already exists. Have you tried to install cleo mod after disabling it in the program?</value>
+  </data>
+  <data name="ErrorCleo2" xml:space="preserve">
+    <value>Can't find cleo mods backup folder.</value>
+  </data>
+  <data name="ErrorCleo3" xml:space="preserve">
+    <value>Cleo mods backup folder is already exists, it is probably an error occurs by the program.</value>
+  </data>
+  <data name="ErrorCleo4" xml:space="preserve">
+    <value>Can't find the folder of cleo mods.</value>
+  </data>
+  <data name="ErrorCNSamp" xml:space="preserve">
+    <value>You can't change your nickname as long as the SA-MP window is active. Please close it.</value>
+  </data>
+  <data name="ErrorCode" xml:space="preserve">
+    <value>Initialize failed. Error code:</value>
+  </data>
+  <data name="ErrorDisconnectFailed" xml:space="preserve">
+    <value>Disconnecting operation have been failed:</value>
+  </data>
+  <data name="ErrorGTA" xml:space="preserve">
+    <value>SA-MP Guard doesn't recognize GTA San Andreas &amp; SA-MP in this computer.</value>
+  </data>
+  <data name="ErrorNet" xml:space="preserve">
+    <value>Can't connect to the internet. Please make sure that the computer have an working network connection.</value>
+  </data>
+  <data name="ErrorNoCleo" xml:space="preserve">
+    <value>We haven't found any cleo mods installed on your computer.</value>
+  </data>
+  <data name="ErrorPrcTrace" xml:space="preserve">
+    <value>Failed to check out your processes.</value>
+  </data>
+  <data name="ErrorRecieve" xml:space="preserve">
+    <value>Recieving information from the server have been failed. This may occur when the server is turning off or removing SA-MP Guard.</value>
+  </data>
+  <data name="ErrorSend" xml:space="preserve">
+    <value>The program wasn't able to send information to the server:</value>
+  </data>
+  <data name="ErrorSent" xml:space="preserve">
+    <value>Information have been failed to be sent:</value>
+  </data>
+  <data name="ErrorServerSelect" xml:space="preserve">
+    <value>Please choose a server from the list.</value>
+  </data>
+  <data name="ErrorVersion" xml:space="preserve">
+    <value>Your SA-MP Guard version doesn't match to the newest one.\nYour version: {OWN}\nThe server version: {NEW}</value>
+  </data>
+  <data name="MsgCleoOff" xml:space="preserve">
+    <value>Cleo mods have been turned off.</value>
+  </data>
+  <data name="MsgCleoOn" xml:space="preserve">
+    <value>Cleo mods have been turned on.</value>
+  </data>
+  <data name="MsgCN" xml:space="preserve">
+    <value>Your nickname have been changed.</value>
+  </data>
+  <data name="MsgConnected" xml:space="preserve">
+    <value>Connected to X:Y with client ID Z.</value>
+  </data>
+  <data name="MsgConnecting" xml:space="preserve">
+    <value>Connecting to </value>
+  </data>
+  <data name="MsgConnectionFailed" xml:space="preserve">
+    <value>The connection to X:Y have been failed: the server is off, or it is lagged or it isn't using SA-MP Guard.</value>
+  </data>
+  <data name="MsgDisconnecting" xml:space="preserve">
+    <value>Disconnecting...</value>
+  </data>
+  <data name="MsgForceDisconnect" xml:space="preserve">
+    <value>The server you were in have just turned off the connection.</value>
+  </data>
+  <data name="MsgNoCheats" xml:space="preserve">
+    <value>The system doesn't recognize any cheat or hacking files on your computer.</value>
+  </data>
+  <data name="MsgOffline" xml:space="preserve">
+    <value>Offline.</value>
+  </data>
+  <data name="MsgPrcCheats" xml:space="preserve">
+    <value>However, we've found out that one or more of your running applications seems to be a cheat or hack.</value>
+  </data>
+  <data name="RTL" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ToolStripAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="ToolStripCheats" xml:space="preserve">
+    <value>Cheats Remove</value>
+  </data>
+  <data name="ToolStripCleo" xml:space="preserve">
+    <value>Cleo</value>
+  </data>
+  <data name="ToolStripMinimize" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="ToolStripQuit" xml:space="preserve">
+    <value>Quit</value>
+  </data>
+  <data name="ToolStripSite" xml:space="preserve">
+    <value>SA-MP Guard - Official Site</value>
+  </data>
+  <data name="CLActive" xml:space="preserve">
+    <value>Activate cleo mods</value>
+  </data>
+  <data name="CLButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CLButtonDo" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="CLDeactive" xml:space="preserve">
+    <value>Cancel cleo mods</value>
+  </data>
+  <data name="CLHeader" xml:space="preserve">
+    <value>Cleo Mod</value>
+  </data>
+  <data name="CLText" xml:space="preserve">
+    <value>Here you can choose whether to use cleo mods or not, because they are not allowed in some of the servers.</value>
+  </data>
+  <data name="CNButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CNButtonChange" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="CNHeader" xml:space="preserve">
+    <value>Change nickname</value>
+  </data>
+  <data name="CNText" xml:space="preserve">
+    <value>Enter your new nickname here:
+(If SA-MP window is active, you'll need to close and reopen it for the name to be updated)</value>
+  </data>
+  <data name="EButtonClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="EError" xml:space="preserve">
+    <value>SA-MP Guard
+Application Error:</value>
+  </data>
+  <data name="EHeader" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="NVButtonClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="NVHeader" xml:space="preserve">
+    <value>New Version</value>
+  </data>
+  <data name="NVLink" xml:space="preserve">
+    <value>To download, please enter the link below:</value>
+  </data>
+  <data name="NVMessage" xml:space="preserve">
+    <value>SA-MP Guard
+New version:</value>
+  </data>
+  <data name="NVNewest" xml:space="preserve">
+    <value>Newest version:</value>
+  </data>
+  <data name="NVOwn" xml:space="preserve">
+    <value>Your version:</value>
+  </data>
+  <data name="NVWarning" xml:space="preserve">
+    <value>You will have to download the new version in order to use SA-MP Guard.</value>
+  </data>
+  <data name="RCButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="RCButtonOpenFolder" xml:space="preserve">
+    <value>Open folder</value>
+  </data>
+  <data name="RCButtonRemove" xml:space="preserve">
+    <value>Remove all files</value>
+  </data>
+  <data name="RCCheckBox" xml:space="preserve">
+    <value>I choose to remove the files and I know that I will maybe not be able to return them</value>
+  </data>
+  <data name="RCDetails" xml:space="preserve">
+    <value>File details</value>
+  </data>
+  <data name="RCFileName" xml:space="preserve">
+    <value>File name:</value>
+  </data>
+  <data name="RCHeader" xml:space="preserve">
+    <value>Remove cheats</value>
+  </data>
+  <data name="RCMessage" xml:space="preserve">
+    <value>The following files have been recognized as connected to cheats or hacks, and they should be deleted:</value>
+  </data>
+  <data name="RCPath" xml:space="preserve">
+    <value>Path:</value>
+  </data>
+  <data name="ErrorSAMPCFG" xml:space="preserve">
+    <value>The file sa-mp.cfg isn't found, the program can not continue.</value>
+  </data>
+  <data name="ErrorGameActive" xml:space="preserve">
+    <value>You can't connect while your GTA SA game is running. Close it, connect with SA-MP Guard, and then start it again.</value>
+  </data>
+  <data name="MsgAutoDisconnect" xml:space="preserve">
+    <value>You've been automatically disconnected for being out of the game for the last two minutes.</value>
+  </data>
+  <data name="ErrorName" xml:space="preserve">
+    <value>Your name defined in the program is not equal to the name in your SA-MP client. Please match them.</value>
+  </data>
+  <data name="ButtonPlay" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="CDCFG" xml:space="preserve">
+    <value>CFG file found.</value>
+  </data>
+  <data name="CDCheat" xml:space="preserve">
+    <value>Cheat detection is working.</value>
+  </data>
+  <data name="CDDocuments" xml:space="preserve">
+    <value>Working with My Documents...</value>
+  </data>
+  <data name="CDIncorrectVersion" xml:space="preserve">
+    <value>Incorrect version detected.</value>
+  </data>
+  <data name="CDInternet" xml:space="preserve">
+    <value>Internet is working...</value>
+  </data>
+  <data name="CDLists" xml:space="preserve">
+    <value>Lists have successfully been updated...</value>
+  </data>
+  <data name="CDLoading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="CDNickname" xml:space="preserve">
+    <value>Nickname has been found...</value>
+  </data>
+  <data name="CDPath" xml:space="preserve">
+    <value>Searching for GTASA directory...</value>
+  </data>
+  <data name="CDRegistry" xml:space="preserve">
+    <value>Registry is working...</value>
+  </data>
+  <data name="CDServers" xml:space="preserve">
+    <value>Server reading is comleted...</value>
+  </data>
+  <data name="CDVersion" xml:space="preserve">
+    <value>Version detected: </value>
+  </data>
+  <data name="ErrorFiles" xml:space="preserve">
+    <value>Couldn't create file files, probably because there is no permission. Try restarting the program as administrator.</value>
+  </data>
+  <data name="ErrorPrc" xml:space="preserve">
+    <value>Couldn't find any processes.</value>
+  </data>
+  <data name="ACAgain" xml:space="preserve">
+    <value>Show me the agreement again if it ever changes</value>
+  </data>
+  <data name="ACClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ACContinue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="ACHeader" xml:space="preserve">
+    <value>SA-MP Guard Service Agreement</value>
+  </data>
+  <data name="ACRead" xml:space="preserve">
+    <value>I have read, understood and accepted the agreement</value>
+  </data>
+  <data name="ACSource" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="ACText" xml:space="preserve">
+    <value>In order to activate the program you must accept the following agreement:</value>
+  </data>
+</root>

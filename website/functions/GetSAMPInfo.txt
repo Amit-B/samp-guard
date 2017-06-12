@@ -1,0 +1,18 @@
+func|GetSAMPInfo(playerid,keyname[]);
+status|0
+category|Settings
+desc|הפונקציה מוצאת מידע כללי עבור ה-SA-MP של השחקן.
+changelog1|1.1:נוצרה רשמית
+param1|השחקן לבדיקה
+param2|<a href="index.php?p=page&i=keys">סוג המידע</a> למציאה
+// from gtest_cmds.php
+if(equal(cmd,"/fps"))
+{
+	cmd = strtok(cmdtext,idx);
+	if(!strlen(cmd)) return SendClientMessage(playerid,white," Usage: /fps [id]");
+	new id = strval(cmd);
+	GetPlayerName(id,string,MAX_PLAYER_NAME);
+	format(string,sizeof(string),"%s's fps limit: %d",string,GetSAMPInfo(id,"fpslimit"));
+	SendClientMessage(playerid,white,string);
+	return 1;
+}

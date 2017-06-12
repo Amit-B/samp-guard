@@ -1,0 +1,11 @@
+func|SetPlayerMoonSize(playerid,moonsize);
+status|0
+category|Player
+desc|הפונקציה משנה את גודל הירח עבור שחקן ספציפי.
+changelog1|1.1:נוצרה רשמית
+param1|השחקן לשינוי
+param2|גודל הירח החדש, מספר חיובי
+note1|<b>הערה:</b> גודל הירח משתנה בשימוש בפונקציה <a href="index.php?p=function&f=SetPlayerMoonSize"> או בירייה על הירח עם Sniper Rifle.
+note2|<b>הערה #2:</b> גודל הירח הברירת מחדל הוא DEFAULT_MOON_SIZE.
+// Used to take the screenshot for United DM v2
+SetPlayerMoonSize(playerid,15);

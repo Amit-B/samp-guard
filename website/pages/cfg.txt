@@ -1,0 +1,16 @@
+﻿SA-MP CFG - משתני סאמפ
+הביטויים הבאים מוגדרים כהגדרה (#define) בקובץ ה-INC של המערכת, והם עשויים להיות שימושיים תוך כדי התכנות:
+המשתנים הבאים הם הגדרות קיימות ל-SA-MP, שבאופן בסיסי לא ניתנת לנו הגישה אליהם.
+עם שימוש בפונקציה <a href="index.php?p=function&f=GetSAMPInfo">GetSAMPInfo</a> ניתנת הגישה אל משתנים אלו.
+<b>שים לב:</b> הגדרות אלו גם משמשות כפקודות קליינט.
+<br/><br/>
+<table style=\"width:100%;\" border="1">
+<tr><th>הגדרה</th><th>ערך</th><th>מידע</th></tr>
+<tr><td>timestamp</td><td>0-1</td><td>הצגת זמן שליחה של כל הודעה בצ'אט</td></tr>
+<tr><td>disableheadmove</td><td>0-1</td><td>הפעלה או ביטול של תזוזת הראש</td></tr>
+<tr><td>fpslimit</td><td>20-100</td><td>כמות FPS מקסימלית</td></tr>
+<tr><td>pagesize</td><td>10-20</td><td>כמות הודעות שמופיעה בצ'אט</td></tr>
+<tr><td>multicore</td><td>0-1</td><td>שימוש במספר מעבדים על מנת להאיץ את המשחק</td></tr>
+<tr><td>audioproxyoff</td><td>0-1</td><td>כניסה באמצעות פרוקסי לכל סאונד שנשמע מהמוד</td></tr>
+<tr><td>audiomsgoff</td><td>0-1</td><td>הצגת הודעות בצ'אט עבור השמעת סאונד מהמוד</td></tr>
+</table>

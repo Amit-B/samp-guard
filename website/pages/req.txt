@@ -1,0 +1,16 @@
+Requests - בקשות
+בקשות הן הודעה שנשלחת מהשרת אל השחקן שהתשובה לבקשה לא יכולה להתקבל באותו הרגע.<br/>
+בדיקת צ'יטים לדוגמה, נערכת כמות זמן מסויימת, לכן היא דורשת לפעול כבקשה ולא כפונקציה ישירה.<br/>
+אז כשצריכים לבצע בדיקת צ'יטים השלב הראשון הוא לשלוח את הבקשה באמצעות שימוש ב-<a href="index.php?p=function&f=FindCheats">FindCheats</a> ולאחר מכן לקבל את התשובה ב-<a href="index.php?p=event&f=OnProgramResponse">OnProgramResponse</a>.
+<br/><br/>
+<table style=\"width:100%;\" border="1">
+<tr><th>הגדרת הבקשה</th><th>מספר</th><th>שימוש</th></tr>
+<tr><td>INVALID_REQUEST</td><td>1-</td><td>בקשה ללא שימוש</td></tr>
+<tr><td>REQUEST_PROC</td><td>0</td><td>לשימוש עם <a href="index.php?p=function&f=IsPlayerRunningProcess">IsPlayerRunningProcess</a></td></tr>
+<tr><td>REQUEST_CHEATS</td><td>1</td><td>לשימוש עם <a href="index.php?p=function&f=FindCheats">FindCheats</a></td></tr>
+<tr><td>REQUEST_CLEO</td><td>2</td><td>לשימוש עם <a href="index.php?p=function&f=FindCleoMods">FindCleoMods</a></td></tr>
+<tr><td>REQUEST_PROCLIST</td><td>3</td><td>לשימוש עם <a href="index.php?p=function&f=GetProcesses">GetProcesses</a></td></tr>
+<tr><td>REQUEST_HWID</td><td>4</td><td>לשימוש עם <a href="index.php?p=function&f=GetPlayerHWID">GetPlayerHWID</a></td></tr>
+<tr><td>REQUEST_TEXT</td><td>5</td><td>לשימוש עם <a href="index.php?p=function&f=GetPlayerText">GetPlayerText</a></td></tr>
+<tr><td>REQUEST_TXD</td><td>6</td><td>לשימוש עם <a href="index.php?p=function&f=TXD_Exist">TXD_Exist</a></td></tr>
+</table>

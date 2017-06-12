@@ -1,0 +1,8 @@
+Volume Types - סוגי ווליום
+ניתן להשיג את סוגי הווליום של המשחק עם הפונקציה <a href="index.php?p=function&f=GetPlayerVolume">GetPlayerVolume</a>.
+<br/><br/>
+<table style=\"width:100%;\" border="1">
+<tr><th>הגדרה</th><th>ערך</th><th>מידע</th></tr>
+<tr><td>VOLUME_RADIO</td><td>0</td><td>ווליום הרדיו של המשחק</td></tr>
+<tr><td>VOLUME_SFX</td><td>1</td><td>ווליום הסאונדים של המשחק</td></tr>
+</table>

@@ -1,0 +1,9 @@
+Vision Types - סוגי ראייה
+ניתן לקבל ולשנות את סוגי הראייה של השחקן באמצעות הפונקציות <a href="index.php?p=function&f=GetPlayerVision">GetPlayerVision</a> & <a href="index.php?p=function&f=SetPlayerVision">SetPlayerVision</a>.<br/>
+<b>שים לב:</b> סוג הראייה הוא מה שהשחקן רואה כשיש לו משקפיי ראיית לילה וכדומה.
+<br/><br/>
+<table style=\"width:100%;\" border="1">
+<tr><th>הגדרה</th><th>ערך</th><th>מידע</th></tr>
+<tr><td>VISION_NIGHT</td><td>0</td><td>Night Vision Goggles</td></tr>
+<tr><td>VISION_THERMAL</td><td>1</td><td>Thermal Vision Goggles</td></tr>
+</table>

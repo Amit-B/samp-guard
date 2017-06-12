@@ -1,0 +1,21 @@
+func|FindCheats(playerid);
+status|0
+category|Security
+desc|שליחת בקשה לסריקת צ'יטים כרגע במחשב של השחקן. התשובה נשלחת אל המקרה <a href="index.php?p=event&f=OnProgramResponse">OnProgramResponse</a>. התשובה יכולה להיות הסטרינג True או False.
+changelog1|1.0 Beta 4:נוצרה רשמית
+changelog2|1.0 Beta 6:שם הפונקציה שונה מ-IsClientUsingCheats ל-FindCheats
+param1|השחקן לסריקת הצ'יטים
+public OnPlayerConnect(playerid)
+{
+	FindCheats(playerid);
+	return 1;
+}
+public OnProgramResponse(clientid,response,data[])
+{
+	if(response == REQUEST_CHEATS && !strcmp(data,"True"))
+	{
+		new playerid = GetClientPlayerID(clientid);
+		SendClientMessage(playerid,0xff0000aa,"Sorry, you're not welcome here, cheater!");
+		BanEx(playerid,"Cheater");
+	}
+}

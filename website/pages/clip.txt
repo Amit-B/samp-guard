@@ -1,0 +1,10 @@
+Weapon Clip IDs - מספרי מחסניות
+לפניכם מספרי המחסניות הקיימות לשימוש עם <a href="index.php?p=function&f=SetPlayerClipAmmo">SetPlayerClipAmmo</a> או <a href="index.php?p=function&f=GetPlayerClipAmmo">GetPlayerClipAmmo</a>:
+<br/><br/>
+<table style=\"width:100%;\" border="1">
+<tr><th>מספר</th><th>סלוט מחסנית</th></tr>
+<tr><td>1</td><td>Pistol (נשקים 22, 23, 24)</td></tr>
+<tr><td>2</td><td>Shotgun (נשקים 25, 26, 27)</td></tr>
+<tr><td>3</td><td>SMG (נשקים 28, 29, 32)</td></tr>
+<tr><td>4</td><td>Assault (נשקים 30, 31)</td></tr>
+</table>

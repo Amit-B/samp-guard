@@ -1,0 +1,8 @@
+func|ResetPlayerMoonSize(playerid);
+status|0
+category|Player
+desc|החזרת גודל הירח עבור שחקן לגודל ברירת המחדל (DEFAULT_MOON_SIZE).
+changelog1|1.1:נוצרה רשמית
+param1|השחקן לאיפוס גודל הירח
+note1|<b>הערה:</b> גודל הירח משתנה בשימוש בפונקציה <a href="index.php?p=function&f=SetPlayerMoonSize"> או בירייה על הירח עם Sniper Rifle.
+note2|<b>הערה:</b> ניתן לביצוע גם באמצעות <a href="index.php?p=function&f=SetPlayerMoonSize">SetPlayerMoonSize</a>.

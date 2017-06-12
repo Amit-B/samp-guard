@@ -1,0 +1,19 @@
+func|SetPlayerWaveLevel(playerid,wavelevel);
+status|0
+category|Player
+desc|שינוי גובה הגלים עבור שחקן ספציפי. ניתן ומומלץ להשתמש בפונקציה על כל השרת ביחד עם לולאה.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לשינוי גובה הגלים
+param2|גובה הגלים
+note1|<b>הערה:</b> גובה הגלים ברירת המחדל הוא 0 (או עם שימוש בהגדרה, DEFAULT_WAVE_HEIGHT).
+note2|<b>הערה #2:</b> בנוסף, מבדיקות נראה כי אין הרבה שונה בין גלים בגובה חיובי לגובה מינוס שלילי.
+// from gtest_cmds.pwn
+if(equal(cmd,"/waves") && IsPlayerAdmin(playerid))
+{
+	cmd = strtok(cmdtext,idx);
+	if(!strlen(cmd)) return SendClientMessage(playerid,white," Usage: /waves [amount]");
+	format(string,sizeof(string),"Waves height is now %d",waves = strval(cmd));
+	SendClientMessageToAll(white,string);
+	for(new i = 0; i < MAX_PLAYERS; i++) if(IsPlayerConnected(i)) SetPlayerWaveLevel(i,waves);
+	return 1;
+}

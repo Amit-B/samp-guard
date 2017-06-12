@@ -1,0 +1,28 @@
+func|EnableGameCheat(playerid,cheatid,bool:enable);
+status|0
+category|Player
+desc|הפעלת <a href="index.php?p=page&i=cheats">צ'יט כלשהו של המשחק</a> (קוד).
+changelog1|1.0 Beta 8:נוצרה רשמית עם CHEAT_DRIVEONWATER, CHEAT_INVISIBLECARS, CHEAT_NORELOAD
+changelog2|1.1:נוסף CHEAT_STOPGAMECLOCK
+param1|מגבלת השחקנים
+param2|מספר הצ'יט עבור הפעולה
+param3|ערך בוליאני, עבור הפעלה או ביטול
+// from gtest_cmds.txt
+if(equal(cmd,"/waterdrive"))
+{
+	EnableGameCheat(playerid,CHEAT_DRIVEONWATER,!IsGameCheatEnabled(playerid,CHEAT_DRIVEONWATER));
+	SendClientMessage(playerid,white,"Water driving toggled.");
+	return 1;
+}
+if(equal(cmd,"/invcars"))
+{
+	EnableGameCheat(playerid,CHEAT_INVISIBLECARS,!IsGameCheatEnabled(playerid,CHEAT_INVISIBLECARS));
+	SendClientMessage(playerid,white,"Invisible cars toggled.");
+	return 1;
+}
+if(equal(cmd,"/noreload"))
+{
+	EnableGameCheat(playerid,CHEAT_NORELOAD,!IsGameCheatEnabled(playerid,CHEAT_NORELOAD));
+	SendClientMessage(playerid,white,"No reload toggled.");
+	return 1;
+}

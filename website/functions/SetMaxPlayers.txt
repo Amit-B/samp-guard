@@ -1,0 +1,15 @@
+func|SetMaxPlayers(max);
+status|3
+category|Connections
+desc|הפונקציה מגדירה עבור הסקריפט הראשי של המערכת את מגבלת השחקנים בשרת. נועדה למטרת אופטימיזציה והורדת לאגים.
+changelog1|1.0 Beta 1:נוצרה רשמית
+changelog2|1.0-7:נמחקה כי נעשו שיפורי אופטימיזציה שלא מצריכים אותה
+param1|מגבלת השחקנים
+note1|<font color="red"><b>הפונקציה נמחקה:</b> בגרסה 1.0-7 הפונקציה הוסרה ולא ניתן להשתמש בה יותר.</font>
+new MAX_PLAYERS_ = MAX_PLAYERS;
+public OnPlayerConnect(playerid)
+{
+	MAX_PLAYERS_ = GetHighestID();
+	SetMaxPlayers(MAX_PLAYERS_);
+	// rest of your script shit...
+}

@@ -1,0 +1,8 @@
+func|TXD_Exist(playerid,txdname[]);
+status|1
+category|TXD
+desc|בדיקה האם קובץ TXD קיים. התשובה נשלחת באמצעות בקשה מספר 6 ל-<a href="index.php?p=event&f=OnProgramResponse">OnProgramResponse</a>.
+changelog1|2.0:נוצרה רשמית
+note1|<b>הערה:</b> קבצי TXD שעובדים עם sGuard יהיו אך ורק בתיקייה models/txd/ באופן אוטומטי.
+param1|השחקן לבדיקה
+param2|שם הקובץ ללא .txd

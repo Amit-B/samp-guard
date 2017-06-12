@@ -1,0 +1,9 @@
+func|SetPlayerClipAmmo(playerid,clipslot,ammo)
+status|0
+category|Player
+desc|שינוי כמות הכדורים שיש לשחקן במחסנית הנוכחית, מבין נשקים מסוג Pistol, Shotgun, SMG, Assault.
+changelog1|2.0:נוצרה רשמית
+note1|<b>הערה:</b> מדובר בכמות הנשקים במחסנית, לא בנשק באופן כללי. אם לדוגמה אני משתמש ב-Desert Eagle אז כמות הכדורים במחסנית שלי תהיה 7. אם אני מחזיק Sawnoff Shotgun בכל יד אז הכמות תהיה 4.
+param1|השחקן לשינוי
+param2|<a href="index.php?p=page&i=clip">מספר המחסנית</a> לשינוי
+param3|כמות כדורים חדשה

@@ -1,0 +1,8 @@
+func|GetPlayerControlState(playerid);
+status|0
+category|Player
+desc|מציאת מצב השליטה של השחקן כרגע במשחק. המצב מוחזר בתור מספר.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לבדיקה
+note1|<b>הפונקציה מחזירה:</b> 0 אם השחקן במים או באויר, 1 אם השחקן ברכב, 2 אם השחקן בדיוק נכנס לאינטריור, 3 אם השחקן הולך רגל על האדמה
+stock IsPlayerOnGround(playerid) return GetPlayerControlState(playerid) == 3;

@@ -1,0 +1,12 @@
+Defines & Constants - הגדרות וקבועים
+הביטויים הבאים מוגדרים כהגדרה (#define) בקובץ ה-INC של המערכת, והם עשויים להיות שימושיים תוך כדי התכנות:
+<br/><br/>
+<table style=\"width:100%;\" border="1">
+<tr><th>הגדרה</th><th>ערך</th><th>מידע</th></tr>
+<tr><td>MAX_CLIENTS</td><td>250</td><td>מגבלת התחברויות למערכת עבור כל שרת</td></tr>
+<tr><td>INVALID_CLIENT_ID</td><td>1-</td><td>מספר שגוי של התחברות למערכת</td></tr>
+<tr><td>DEFAULT_GRAVITY</td><td>0.008</td><td>כמות ברירת מחדל של כוח משיכה</td></tr>
+<tr><td>DEFAULT_MAX_HEALTH</td><td>569.0</td><td>כמות ברירת מחדל של גודל מד חיים</td></tr>
+<tr><td>DEFAULT_WAVE_HEIGHT</td><td>0</td><td>כמות ברירת מחדל של גובה הגלים</td></tr>
+<tr><td>DEFAULT_MOON_SIZE</td><td>3</td><td>גודל ברירת המחדל של הירח</td></tr>
+</table>

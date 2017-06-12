@@ -1,0 +1,22 @@
+func|SetPlayerLock(playerid,locked);
+status|0
+category|Player
+desc|הכנסה או הוצאה של שחקן ממצב נעילה. מצב זה דומה לאפקט של TogglePlayerControllable, רק שבמקרה הזה השחקן מקבל אנימציית Idle לפי הדמות שלו וגם מסוגל להזיז את העכבר.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לנעילה או הסרת נעילה
+param2|1 לנעילה או 0 להסרת נעילה
+// from gtest_cmds.pwn
+if(equal(cmd,"/lockplayer") && IsPlayerAdmin(playerid))
+{
+	cmd = strtok(cmdtext,idx);
+	if(!strlen(cmd)) return SendClientMessage(playerid,white," Usage: /lockplayer [id]");
+	SetPlayerLock(strval(cmd),1);
+	return 1;
+}
+if(equal(cmd,"/unlockplayer") && IsPlayerAdmin(playerid))
+{
+	cmd = strtok(cmdtext,idx);
+	if(!strlen(cmd)) return SendClientMessage(playerid,white," Usage: /unlockplayer [id]");
+	SetPlayerLock(strval(cmd),0);
+	return 1;
+}

@@ -1,0 +1,20 @@
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\bin\Release\SAMP-IL Guard.exe
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\bin\Release\SAMP-IL Guard.pdb
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP-IL Guard.exe
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP-IL Guard.pdb
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\bin\Release\SAMP-IL Guard.exe.config
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Main.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Images.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Strings.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\GenerateResource-ResGen.read.4.tlog
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Forms.About.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Forms.Error.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Properties.Resources.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Forms.ChangeName.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Forms.RemoveCheats.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Forms.NewVersion.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Forms.Accept.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Release\SAMP_IL_Guard.Forms.Cleo.resources

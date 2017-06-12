@@ -1,0 +1,19 @@
+func|SetPlayerBlur(playerid,level);
+status|0
+category|Player
+desc|שינוי רמת הטשטוש של המסך בעת מהירות.
+changelog1|2.0:נוצרה רשמית
+note1|<b>הערה:</b> ב-Single Player, כאשר נוסעים במהירות ברכב או אופנוע, המסך מתחיל להיות מטושטש. ב-SA-MP האופציה בוטלה. עם הפונקציה הזו ניתן להחזיר אותה.
+note1|<b>הערה #2:</b> השתמשו ב-0 על מנת לבטל או ב-36 כדי להגיע לרמה שמוגדרת ב-Single Player.
+param1|השחקן לשינוי
+param2|רמת טשטוש
+// from gtest_cmds.pwn
+if(equal(cmd,"/blur"))
+{
+	cmd = strtok(cmdtext,idx);
+	if(!strlen(cmd)) return SendClientMessage(playerid,white," Usage: /blur [level 0-3]");
+	new lvl = clamp(strval(cmd),0,3);
+	SetPlayerBlur(playerid,36*lvl);
+	SendClientMessage(playerid,white,"Blur level changed.");
+	return 1;
+}

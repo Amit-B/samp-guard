@@ -1,0 +1,8 @@
+func|GetPlayerRunState(playerid);
+status|0
+category|Player
+desc|מציאת מצב הריצה הנוכחי של שחקן. המצב מוחזר בתור מספר.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לבדיקה
+note1|<b>הפונקציה מחזירה:</b> 0 אם השחקן כרגע ברכב, 1 אם השחקן עומד בלי לזוז, 4 כשהשחקן רק מתחיל לרוץ, 6 כשהשחקן רץ, 7 כשהשחקן רץ תוך כדי לחיצה על מקש SPRINT (בדרך כלל Space).
+stock IsPlayerRunning(playerid) return GetPlayerRunState(playerid) >= 4;

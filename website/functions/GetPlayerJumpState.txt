@@ -1,0 +1,9 @@
+func|GetPlayerJumpState(playerid);
+status|0
+category|Player
+desc|מציאת מצב הקפיצה הנוכחי של שחקן. המצב מוחזר בתור מספר.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לבדיקה
+note1|<b>הפונקציה מחזירה:</b> 32 אם השחקן לא קופץ - הולך רגל במצב רגיל, 34 כשהשחקן נמצא באויר, 36 כשהשחקן נוחת
+public IsPlayerOnAir(playerid) return GetPlayerControlState(playerid) == 3 && GetPlayerJumpState(playerid) == 34;
+public IsPlayerOnWater(playerid) return GetPlayerControlState(playerid) == 3 && GetPlayerJumpState(playerid) != 34;

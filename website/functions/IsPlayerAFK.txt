@@ -1,0 +1,7 @@
+func|IsPlayerAFK(playerid);
+status|2
+category|Player
+desc|הפונקציה בודקת אם שחקן במצב AFK.
+changelog1|1.1:נוצרה רשמית
+param1|השחקן לבדיקה
+note1|<b>הפונקציה מחזירה:</b> 1 אם השחקן במצב AFK, 0 אם לא.

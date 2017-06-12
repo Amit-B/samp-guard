@@ -1,0 +1,6 @@
+func|Float:GetPlayerRotationSpeed(playerid);
+status|2
+category|Player
+desc|בדיקת מהירות הסיבוב של השחקן.
+changelog1|2.0:נוצרה רשמית
+param1|שחקן לבדיקה

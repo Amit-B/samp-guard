@@ -1,0 +1,15 @@
+func|GetPlayerVolume(playerid,volumetype);
+status|0
+category|Settings
+desc|הפונקציה מקבלת את הווליום המוגדר אצל השחקן.
+changelog1|1.1:נוצרה רשמית
+param1|השחקן לבדיקה
+param2|<a href="index.php?p=page&i=vol">סוג הווליום</a> למציאה
+// from gtest_cmds.php
+if(equal(cmd,"/volume"))
+{
+	new v = GetPlayerVolume(playerid,VOLUME_RADIO), v2 = GetPlayerVolume(playerid,VOLUME_SFX);
+	format(string,sizeof(string),"Radio: %d || SFX: %d",v,v2);
+	SendClientMessage(playerid,white,string);
+	return 1;
+}

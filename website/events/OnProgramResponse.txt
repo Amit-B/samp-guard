@@ -1,0 +1,7 @@
+func|OnProgramResponse(clientid,response,data[]);
+status|0
+desc|מקרה זה אחראי לבקשות מסוגים שונים שהשרת שולח. הוא נקרא כאשר יש תשובה לבקשה - בדרך כלל שניה או פחות אחרי שליחת הבקשה.
+changelog1|1.0 Beta 1:נוצר רשמית
+param1|מספר ההתחברות שממנו נשלחה התשובה (ניתן ורצוי להשתמש כאן ב-GetClientPlayerID)
+param2|<a href="index.php?p=page&i=req">מספר הבקשה</a> שאליה הגיעה התשובה
+param3|התשובה עצמה, המידע שהגיע איתה בתור סטרינג

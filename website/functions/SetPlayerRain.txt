@@ -1,0 +1,15 @@
+func|SetPlayerRain(playerid);
+status|0
+category|Player
+desc|הורדת גשם במשחק של השחקן. בדרך כלל, נדרש מזג אויר מסויים כדי לאפשר גשם: באמצעות הפונקציה הזו ניתן ליצור גשם מתי שנרצה בלי קשר למזג האויר בשרת.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן להורדת גשם
+note1|<b>הערה:</b> הגשם יירד ויסתיים לאחר שנייה או שתיים. מומלץ להשתמש עם טיימר.
+// from gtest_cmds.pwn
+forward Rainy();
+public Rainy() // (timer of 1000ms)
+{
+	assert rain > -1;
+	for(new i = 0; i < MAX_PLAYERS; i++) if(IsPlayerConnected(i)) SetPlayerRain(i);
+	return 1;
+}

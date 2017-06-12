@@ -1,0 +1,7 @@
+func|GetTrainSpeed(vehicleid);
+status|2
+category|Vehicle
+desc|הפונקציה מקבלת מהירות נוכחית של רכבת.
+changelog1|1.1:נוצרה רשמית
+note1|<b>הערה:</b> כמו בכל פונקציות הרכבים, פונקציה זו תפעל רק על רכב שיש בו לפחות נוסע אחד שמשתמש ב-SA-MP Guard.
+param1|האיידי של הרכב (רכבת) לבדיקה

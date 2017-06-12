@@ -1,0 +1,11 @@
+func|GetPlayerRadioStation(playerid);
+status|0
+category|Player
+desc|מציאת <a href="index.php?p=page&i=radio">תחנת הרדיו</a> המופעלת כרגע ברכב של השחקן.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לבדיקה
+public OnPlayerCommandText(playerid,cmdtext[])
+{
+	if(!strcmp(cmdtext,"/amipro?",true)) return SendClientMessage(playerid,0xffffffaa,GetPlayerRadioStation(playerid) == 7 ? ("You're absolutely a pro!") : ("Not really..."));
+	return 0;
+}

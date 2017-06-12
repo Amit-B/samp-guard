@@ -1,0 +1,7 @@
+func|OnProcessStop(clientid,process[]);
+status|0
+desc|מקרה זה אחראי על תחילתם של תהליכים במחשבי השחקנים. ההפך מ-<a href="index.php?p=event&e=OnProcessStart">OnProcessStart</a>
+changelog1|1.1:נוצר רשמית
+note1|<b>הערה:</b> ניתן להשתמש ב-<a href="index.php?p=functions&f=GetClientPlayerID">GetClientPlayerID</a> כדי להשיג את השחקן שממנו נקרא המקרה.
+param1|מספר ההתחברות שממנה הסתיים התהליך
+param2|שם התהליך

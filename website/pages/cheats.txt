@@ -1,0 +1,10 @@
+Cheats - צ'יטים
+לפניכם רשימת מספרי הקודים הניתנים לשימוש בפונקציות <a href="index.php?p=function&f=EnableGameCheat">EnableGameCheat</a> & <a href="index.php?p=function&f=IsGameCheatEnabled">IsGameCheatEnabled</a>.
+<br/><br/>
+<table style=\"width:100%;\" border="1">
+<tr><th>הגדרה</th><th>מספר הצ'יט</th><th>מידע</th></tr>
+<tr><td>CHEAT_INVISIBLECARS</td><td>1</td><td>כל הרכבים שהשחקן רואה יהפכו לבלתי נראים פרט לגלגלים שלהם</td></tr>
+<tr><td>CHEAT_DRIVEONWATER</td><td>2</td><td>השחקן מקבל את היכולת לסוע על המים עם מכוניות</td></tr>
+<tr><td>CHEAT_NORELOAD</td><td>3</td><td>כדורי הנשקים של השחקן קפואים על המספר בו הם נמצאים</td></tr>
+<tr><td>CHEAT_STOPGAMECLOCK</td><td>4</td><td>עצירת שעון המשחק</td></tr>
+</table>

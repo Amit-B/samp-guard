@@ -1,0 +1,6 @@
+func|GetPlayerInfiniteRun(playerid);
+status|0
+category|Player
+desc|בדיקה האם שחקן משתמש בריצה אינסופית.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לבדיקה

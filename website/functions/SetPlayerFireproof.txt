@@ -1,0 +1,14 @@
+func|SetPlayerFireproof(playerid,enabled);
+status|0
+category|Player
+desc|שינוי מצב השחקן מבחינת Fireproof - חסימת אש. מצב זה מאפשר ללכת על אש ולהשרף, מבלי שהחיים ירדו. ניתן לקבל מצב זה במשחק הרגיל (Single Player) כשעוברים את המשימות של מכבה האש.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לשינוי המצב
+param2|האם לאפשר חסימת אש? 1 אם כן, 0 אם לא
+// from gtest_cmds.pwn
+if(equal(cmd,"/fireproof"))
+{
+	SetPlayerFireproof(playerid,!GetPlayerFireproof(playerid));
+	SendClientMessage(playerid,white,"Fireproof toggled.");
+	return 1;
+}

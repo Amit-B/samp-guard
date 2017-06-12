@@ -1,0 +1,18 @@
+func|OpenWebpage(playerid,url[]);
+status|0
+category|Management
+desc|פתיחת דפדפן באתר מסויים במחשב של המשתמש.
+changelog1|1.0 Beta 3:נוצרה רשמית
+param1|השחקן לפתיחת האתר
+param2|כתובת האתר ללא http://
+note1|<b>הערה:</b> יתכן כי יקחו 1 עד 10 שניות לפתיחת האתר. מומלץ להוסיף הודעה של המתנה, כמו בדוגמה.
+public OnPlayerCommandText(playerid,cmdtext[])
+{
+	if(!strcmp(cmdtext,"/translate",true))
+	{
+		SendClientMessage(playerid,0xffffffaa,"Just a moment...");
+		OpenWebpage(playerid,"translate.google.com");
+		return 1;
+	}
+	return 0;
+}

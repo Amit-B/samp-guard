@@ -1,0 +1,11 @@
+func|GetPlayerTownID(playerid);
+status|1
+category|Player
+desc|מציאת מספר העיר שהשחקן נמצא בה. הפונקציה חוסכת בדיקות של מיקום השחקן, ומחזירה את <a href="index.php?p=page&i=townids">מספר האזור</a> שבו הוא נמצא.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לבדיקה
+public OnPlayerCommandText(playerid,cmdtext[])
+{
+	if(!strcmp(cmdtext,"/lv",true)) return SendClientMessage(playerid,0xffffffaa,GetPlayerTownID(playerid) == 3 ? ("You're in Las Venturas!") : ("Get lost"));
+	return 0;
+}

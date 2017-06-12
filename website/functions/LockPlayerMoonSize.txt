@@ -1,0 +1,6 @@
+func|LockPlayerMoonSize(playerid,bool:lock);
+status|1
+category|Player
+desc|נעילת הירח של השחקן על הגודל הנוכחי. מכיוון שניתן לירות על הירח עם Sniper Rifle ולשנות את הגודל שלו, באמצעות הפונקציה הזו, ניתן לחסום כל שינוי של גודל הירח.
+changelog1|1.1:נוצרה רשמית
+param1|השחקן לנעילה

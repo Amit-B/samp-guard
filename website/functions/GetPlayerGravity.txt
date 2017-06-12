@@ -1,0 +1,6 @@
+func|Float:GetPlayerGravity(playerid);
+status|2
+category|Player
+desc|בדיקת כוח המשיכה המוגדר כרגע במשחק של השחקן. הפונקציה מחזירה ערך עשרוני של כוח המשיכה.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|שחקן לבדיקה

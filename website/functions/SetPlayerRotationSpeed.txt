@@ -1,0 +1,17 @@
+func|SetPlayerRotationSpeed(playerid,Float:rotspeed);
+status|0
+category|Player
+desc|שינוי מהירות שינוי הכיוון של השחקן תוך כדי תזוזה.
+changelog1|2.0:נוצרה רשמית
+param1|השחקן לשינוי
+param2|מהירות חדשה
+note1|<b>הערה:</b> מהירות ברירת המחדל היא 9.0.
+note2|<b>הערה #2:</b> הכוונה בפונקציה זו היא המהירות הקבועה של השחקן ברגע שהוא מבצע סיבוב לכיוון אחר. אם לדוגמה נשתמש במהירות 50.0, השחקן יסתובב לאן שנרצה במהירות ומבלי שישימו לב בכלל. לעומת זאת אם המהירות תהיה 2.0 השחקן יצטרך ללכת כמה צעדים רק עד שיצליח להסתובב.
+// from gtest_cmds.pwn
+if(equal(cmd,"/rotspeed"))
+{
+	cmd = strtok(cmdtext,idx);
+	if(!strlen(cmd)) return SendClientMessage(playerid,white," Usage: /rotspeed [speed]");
+	SetPlayerRotationSpeed(playerid,floatstr(cmd));
+	return 1;
+}

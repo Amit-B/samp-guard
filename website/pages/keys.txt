@@ -1,0 +1,15 @@
+SA-MP Info Keys - מפתחות מידע
+ניתן לקבל את ערכי המידע של SA-MP באמצעות הפונקציה <a href="index.php?p=function&f=GetSAMPInfo">GetSAMPInfo</a>.<br/>
+מפתחות אלו משמשים גם פקודות בתוך המשחק. לא ניתן לשנות אותם, אך ניתן לדעת אותם.<br/>
+<b>שים לב:</b> קיימים עוד סוגי מפתחות שנכון לעכשיו לא ניתן להשיג באמצעות המערכת.
+<br/><br/>
+<table style=\"width:100%;\" border="1">
+<tr><th>שם המפתח</th><th>ערכים אפשריים</th><th>פרטים</th></tr>
+<tr><td>timestamp</td><td>0-1</td><td>האם השחקן בחר להציג את שעת הקבלה של כל הודעה בצ'אט</td></tr>
+<tr><td>disableheadmove</td><td>0-1</td><td>האם השחקן בחר שראשי הדמויות במשחק יזוזו לכיוון שהן מסתכלות אליו/td></tr>
+<tr><td>fpslimit</td><td>20-100</td><td>כמות FPS מקסימלית</td></tr>
+<tr><td>pagesize</td><td>10-20</td><td>כמות הודעות שמופיעות בצ'אט באותו הזמן</td></tr>
+<tr><td>multicore</td><td>0-1</td><td>האם השחקן בחר להשתמש לתהליך של GTA:SA:MP במספר של CPU ולא רק באחד.</td></tr>
+<tr><td>audioproxyoff</td><td>0-1</td><td>האם הכניסה ל-PlayAudioStreamForPlayer תשומש ביחד עם פרוקסי מוגדר</td></tr>
+<tr><td>audiomsgoff</td><td>0-1</td><td>האם השחקן בחר להציג הודעות PlayAudioStreamForPlayer</td></tr>
+</table>

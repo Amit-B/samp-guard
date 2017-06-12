@@ -1,0 +1,18 @@
+func|SetVehicleExpTimer(vehicleid,exptime);
+status|0
+category|Vehicle
+desc|הפונקציה משנה את הזמן הנותר לפיצוץ לרכב. מהרגע שלרכב יש פחות מ-250.0 חיים, מתחיל טיימר מ-0 עד 5000, בהגעה ל-5000 הרכב מתפוצץ.
+changelog1|1.1:נוצרה רשמית
+note1|<b>הערה:</b> כמו בכל פונקציות הרכבים, פונקציה זו תפעל רק על רכב שיש בו לפחות נוסע אחד שמשתמש ב-SA-MP Guard.
+note2|<b>הערה #2:</b> ניתן לשנות את הטיימר למינוס מספר גבוה במיוחד, ובכך למנוע ממנו להתפוצץ דקות שלמות.
+param1|הרכב לשינוי
+param2|כמות הזמן לשינוי לטיימר
+// from gtest_cmds.php
+if(equal(cmd,"/exptimer"))
+{
+	cmd = strtok(cmdtext,idx);
+	if(!strlen(cmd)) return SendClientMessage(playerid,white," Usage: /exptimer [time]");
+	new Float:t = floatstr(cmd), v = GetPlayerVehicleID(playerid);
+	if(v > 0) SetVehicleExpTimer(v,t);
+	return 1;
+}

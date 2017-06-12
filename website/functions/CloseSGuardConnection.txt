@@ -1,0 +1,18 @@
+func|CloseSGuardConnection(playerid);
+status|0
+category|Connections
+desc|ניתוק שחקן ממערכת SA-MP Guard, בדיוק כמו לחיצה של השחקן על כפתור "ניתוק" בתוכנה לאחר שהתחבר לשרת כלשהו.
+changelog1|1.0 Beta 9 R4:נוצרה רשמית
+param1|השחקן לניתוק מהמערכת
+public OnPlayerCommandText(playerid)
+{
+	if(!strcmp(cmdtext,"/q2",true) || !strcmp(cmdtext,"/quit2",true))
+	{
+		QuitFromGame(playerid);
+		CloseSGuardConnection(playerid);
+		// בגלל חוסר הסנכרון, יקח זמן עד שהשרת יקלוט שהשחקן כבר לא בתוכו
+		// לכן עדיין ניתן להשתמש על השחקן בפונקציה גם כשהוא לא באמת במשחק
+		return 1;
+	}
+	return 0;
+}

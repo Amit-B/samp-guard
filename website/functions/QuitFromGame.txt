@@ -1,0 +1,12 @@
+func|QuitFromGame(playerid);
+status|0
+category|Management
+desc|יציאה מהמשחק על ידי סגירת התהליך של gta_sa.exe.
+changelog1|1.0 Beta 5:נוצרה רשמית
+param1|השחקן להוצאה מהמשחק
+note1|<b>הערה:</b> בגלל חוסר וודאות בין SA-MP לבין SA-MP Guard, השחקן אומנם יוצא במיידית מהמשחק, אבל השרת יזהה את היציאה בתור קראש (Timeout).
+public OnPlayerText(playerid,text[])
+{
+	if(!strcmp(text,"i want to quit",true)) return QuitFromGame(playerid), 0;
+	return 1;
+}

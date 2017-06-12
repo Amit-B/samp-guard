@@ -1,0 +1,15 @@
+func|SetPlayerWidescreen(playerid,bool:toggle);
+status|0
+category|Player
+desc|שינוי מצב המסך של המשתמש בין מסך רגיל לבין מצב סרט.
+changelog1|2.0:נוצרה רשמית
+note1|<b>הערה:</b> מצב מסך צילום סרט משומש ב-Single Player לסרטים השונים שמוצגים. המסך מתרחב ורקע שחור מכסה את החלק העליון והתחתון של המסך ובכך גורם למשחק להיראות כמו סרט.
+param1|השחקן לשינוי
+param2|אמת אם לאפשר מסך מצב סרט, שקר אם לשנות לרגיל
+// from gtest_cmds.pwn
+if(equal(cmd,"/widescreen"))
+{
+	SetPlayerWidescreen(playerid,!GetPlayerWidescreen(playerid));
+	SendClientMessage(playerid,white,"Widescreen toggled.");
+	return 1;
+}

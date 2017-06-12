@@ -1,0 +1,6 @@
+func|GetPlayerFireproof(playerid);
+status|0
+category|Player
+desc|בדיקה האם השחקן כרגע במצב חסין לאש.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לבדיקה

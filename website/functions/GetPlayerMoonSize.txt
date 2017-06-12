@@ -1,0 +1,15 @@
+func|GetPlayerMoonSize(playerid);
+status|0
+category|Player
+desc|הפונקציה בודקת את גודל הירח שמוגדר אצל שחקן.
+changelog1|1.1:נוצרה רשמית
+param1|השחקן לבדיקה
+note1|<b>הערה:</b> גודל הירח משתנה בשימוש בפונקציה <a href="index.php?p=function&f=SetPlayerMoonSize"> או בירייה על הירח עם Sniper Rifle.
+// from gtest_cmds.php
+if(equal(cmd,"/volume"))
+{
+	new v = GetPlayerVolume(playerid,VOLUME_RADIO), v2 = GetPlayerVolume(playerid,VOLUME_SFX);
+	format(string,sizeof(string),"Radio: %d || SFX: %d",v,v2);
+	SendClientMessage(playerid,white,string);
+	return 1;
+}

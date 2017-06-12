@@ -1,0 +1,17 @@
+func|GetPlayerVision(playerid,vistype);
+status|1
+category|Player
+desc|בדיקת מצב הראייה של שחקן מסויים. מצב הראייה נתון לשינוי תוך כדי המשחק באמצעות הנשקים Night Vision Goggles / Thermal Vision Goggles, או עם שימוש בפונקציה <a href="index.php?p=function&f=SetPlayerVision">SetPlayerVision</a>.
+changelog1|1.1:נוצרה רשמית
+param1|השחקן לבדיקה
+param2|<a href="index.php?p=page&i=vis">סוג הראייה</a> לבדיקה
+// from gtest_cmds.php
+if(equal(cmd,"/vision"))
+{
+	cmd = strtok(cmdtext,idx);
+	if(!strlen(cmd)) return SendClientMessage(playerid,white," Usage: /vision [type]");
+	new type = strval(cmd);
+	if(type != VISION_NIGHT && type != VISION_THERMAL) type = VISION_NIGHT;
+	SetPlayerVision(playerid,type,!GetPlayerVision(playerid,type));
+	return 1;
+}

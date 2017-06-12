@@ -1,0 +1,9 @@
+func|GetProcesses(playerid,const seperator[]);
+status|0
+category|Security
+desc|שליחת בקשה למציאת כל התהליכים הפעילים במחשב של השחקן. בשלב מאוחר יותר בפיתוח נראה כי אין ברירה אלא להשתמש בפונקציה הזו כדי לזהות צ'יטים שלא נחסמו על ידי FindCheats().
+changelog1|1.0 Beta 1:נוצרה רשמית
+changelog2|1.0 Beta 4:נמחקה מחשש לפגיעה בפרטיות
+changelog3|1.0-2:נוצרה מחדש
+param1|שחקן למציאת הרשימה
+param2|סטרינג מפריד בין כל תהליך ברשימה

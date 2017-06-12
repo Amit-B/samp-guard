@@ -1,0 +1,16 @@
+func|SetPlayerInfiniteRun(playerid,enabled);
+status|0
+category|Player
+desc|הפונקציה מאפשרת לתת לשחקן את היכולת לרוץ בלי הגבלה ובלי להתעייף. ככל הנראה תורם בקרבות במשחק.
+changelog1|1.0 Beta 8:נוצרה רשמית
+changelog2|1.1:נסיון לתיקון לאחר שנודע על באג
+changelog3|2.0:תיקון מוצלח
+param1|השחקן לשינוי מצב הריצה האינסופית
+param2|1 לריצה אינסופית או 0 לביטול ריצה אינסופית
+// from gtest_cmds.pwn
+if(equal(cmd,"/infiniterun"))
+{
+	SetPlayerInfiniteRun(playerid,!GetPlayerInfiniteRun(playerid));
+	SendClientMessage(playerid,white,"Infinite run toggled.");
+	return 1;
+}

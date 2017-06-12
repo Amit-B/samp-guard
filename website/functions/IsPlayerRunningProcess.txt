@@ -1,0 +1,32 @@
+func|IsPlayerRunningProcess(playerid,const procesname[]);
+status|0
+category|Security
+desc|שליחת בקשה לחיפוש תהליך מסויים פעיל במחשב של השחקן. בקשה זו עשויה לעזור בזיהוי תוכנות שונות פעילות, בדומה לזיהוי הצ'יטים, רק שכאן ניתן להשתמש באופן חופשי בשם שתבחרו.
+changelog1|1.0 Beta 4:נוצרה רשמית
+param1|שחקן לחיפוש התהליך
+param2|שם התהליך לחיפוש
+// from gtest_cmds.pwn
+// ... OnPlayerCommandText ...
+if(equal(cmd,"/samp"))
+{
+	if(request[playerid] > INVALID_REQUEST) return SendClientMessage(playerid,white,"Please wait...");
+	request[playerid] = REQUEST_PROC;
+	IsPlayerRunningProcess(playerid,"samp");
+	return 1;
+}
+// ... OnProgramResponse ...
+public OnProgramResponse(clientid,response,data[])
+{
+	new playerid = GetClientPlayerID(clientid);
+	if(playerid != INVALID_PLAYER_ID && IsPlayerConnected(playerid)) if(request[playerid] == response)
+	{
+		switch(response)
+		{
+			case REQUEST_PROC: format(string,sizeof(string),"Your SA-MP window is currently %s.",!strcmp(data,"True") ? ("open") : ("close"));
+			case REQUEST_CHEATS: format(string,sizeof(string),"SAMP-IL Guard %srecognizes you as a cheater.",!strcmp(data,"True") ? ("") : ("doesn't "));
+			case REQUEST_CLEO: format(string,sizeof(string),"SAMP-IL Guard %srecognizes you as a cleo mod user.",!strcmp(data,"True") ? ("") : ("doesn't "));
+		}
+		SendClientMessage(playerid,white,string);
+		request[playerid] = INVALID_REQUEST;
+	}
+}

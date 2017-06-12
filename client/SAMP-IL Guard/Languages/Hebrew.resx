@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ButtonChangeNick" xml:space="preserve">
+    <value>שנה כינוי</value>
+  </data>
+  <data name="ButtonConnect" xml:space="preserve">
+    <value>התחבר לשרת</value>
+  </data>
+  <data name="ButtonDisconnect" xml:space="preserve">
+    <value>ניתוק</value>
+  </data>
+  <data name="ErrorAlreadyActive" xml:space="preserve">
+    <value>SA-MP Guard כבר פעילה במחשב שלך.</value>
+  </data>
+  <data name="ErrorAlreadySamp" xml:space="preserve">
+    <value>SA-MP כבר פעיל במחשב.</value>
+  </data>
+  <data name="ErrorCleo1" xml:space="preserve">
+    <value>תיקיית מוד Cleo כבר קיימת. האם התקנת מוד מסוג Cleo אחרי שביטלת אותו דרך התוכנה? יש ליצור סדר בתיקיות.</value>
+  </data>
+  <data name="ErrorCleo2" xml:space="preserve">
+    <value>לא נמצאה תיקיית גיבוי למודי Cleo.</value>
+  </data>
+  <data name="ErrorCleo3" xml:space="preserve">
+    <value>תיקיית גיבוי כבר קיימת, ככל הנראה חלה בעיה עם שימוש בתוכנה. יש ליצור סדר בתיקיות.</value>
+  </data>
+  <data name="ErrorCleo4" xml:space="preserve">
+    <value>לא נמצאה תיקיית מודים של Cleo.</value>
+  </data>
+  <data name="ErrorCNSamp" xml:space="preserve">
+    <value>לא ניתן לשנות כינוי כשהחלון של SA-MP פתוח. נא לסגור אותו קודם.</value>
+  </data>
+  <data name="ErrorCode" xml:space="preserve">
+    <value>טעינת התוכנה נכשלה. קוד הבעיה:</value>
+  </data>
+  <data name="ErrorDisconnectFailed" xml:space="preserve">
+    <value>ההתנתקות נכשלה. מידע נוסף:</value>
+  </data>
+  <data name="ErrorGTA" xml:space="preserve">
+    <value>SA-MP Guard לא מזהה את GTA San Andreas &amp; SA-MP במחשב זה.</value>
+  </data>
+  <data name="ErrorNet" xml:space="preserve">
+    <value>לא ניתן ליצור קשר עם הרשת. וודא שהמחשב מחובר לאינטרנט.</value>
+  </data>
+  <data name="ErrorNoCleo" xml:space="preserve">
+    <value>לא נמצאו מודים מסוג Cleo במחשב שלך.</value>
+  </data>
+  <data name="ErrorPrcTrace" xml:space="preserve">
+    <value>כשלון במעקב אחר תהליכים. מידע נוסף:</value>
+  </data>
+  <data name="ErrorRecieve" xml:space="preserve">
+    <value>קבלת מידע מהשרת נכשלה. הסיבה יכולה להיות שהוא נפל או שאינו משתמש יותר ב-SA-MP Guard.</value>
+  </data>
+  <data name="ErrorSend" xml:space="preserve">
+    <value>יציאת מידע נכשלה. מידע נוסף:</value>
+  </data>
+  <data name="ErrorSent" xml:space="preserve">
+    <value>שליחת מידע משחק אל השרת נכשלה. מידע נוסף:</value>
+  </data>
+  <data name="ErrorServerSelect" xml:space="preserve">
+    <value>עליך לבחור שרת להתחברות.</value>
+  </data>
+  <data name="ErrorVersion" xml:space="preserve">
+    <value>גרסת SA-MP Guard של השרת אינה תואמת לזו שלך.\nהגרסה שלך: {OWN}\nהגרסה של השרת: {NEW}</value>
+  </data>
+  <data name="MsgCleoOff" xml:space="preserve">
+    <value>מודים מסוג Cleo בוטלו.</value>
+  </data>
+  <data name="MsgCleoOn" xml:space="preserve">
+    <value>מודים מסוג Cleo הוחזרו.</value>
+  </data>
+  <data name="MsgCN" xml:space="preserve">
+    <value>הכינוי שונה בהצלחה.</value>
+  </data>
+  <data name="MsgConnected" xml:space="preserve">
+    <value>מחובר לשרת X:Y במספר הסידורי Z.</value>
+  </data>
+  <data name="MsgConnecting" xml:space="preserve">
+    <value>מתחבר לשרת </value>
+  </data>
+  <data name="MsgConnectionFailed" xml:space="preserve">
+    <value>ההתחברות לשרת X:Y נכשלה: השרת נפל או שהוא בלאגים או שאינו משתמש ב-SA-MP Guard.</value>
+  </data>
+  <data name="MsgDisconnecting" xml:space="preserve">
+    <value>מתנתק...</value>
+  </data>
+  <data name="MsgForceDisconnect" xml:space="preserve">
+    <value>השרת שאליו חוברת לאחרונה ניתק אותך מהמערכת.</value>
+  </data>
+  <data name="MsgNoCheats" xml:space="preserve">
+    <value>המערכת לא מצאה קבצי צ'יטים פעילים במחשב שלך.</value>
+  </data>
+  <data name="MsgOffline" xml:space="preserve">
+    <value>לא מחובר.</value>
+  </data>
+  <data name="MsgPrcCheats" xml:space="preserve">
+    <value>עם זאת, המערכת מזהה שיש תהליך פתוח שאחראי לצ'יטים.</value>
+  </data>
+  <data name="RTL" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ToolStripAbout" xml:space="preserve">
+    <value>אודות</value>
+  </data>
+  <data name="ToolStripCheats" xml:space="preserve">
+    <value>הסרת צ'יטים</value>
+  </data>
+  <data name="ToolStripCleo" xml:space="preserve">
+    <value>Cleo</value>
+  </data>
+  <data name="ToolStripMinimize" xml:space="preserve">
+    <value>מזער</value>
+  </data>
+  <data name="ToolStripQuit" xml:space="preserve">
+    <value>יציאה</value>
+  </data>
+  <data name="ToolStripSite" xml:space="preserve">
+    <value>SA-MP Guard - אתר המערכת</value>
+  </data>
+  <data name="CLActive" xml:space="preserve">
+    <value>הפעל מוד Cleo</value>
+  </data>
+  <data name="CLButtonCancel" xml:space="preserve">
+    <value>ביטול</value>
+  </data>
+  <data name="CLButtonDo" xml:space="preserve">
+    <value>בצע</value>
+  </data>
+  <data name="CLDeactive" xml:space="preserve">
+    <value>בטל מוד Cleo</value>
+  </data>
+  <data name="CLHeader" xml:space="preserve">
+    <value>Cleo מוד</value>
+  </data>
+  <data name="CLText" xml:space="preserve">
+    <value>מכאן תוכלו לבחור האם להפעיל מודים מסוג Cleo או לא, מכיוון שהם אסורים בחלק מהשרתים.</value>
+  </data>
+  <data name="CNButtonCancel" xml:space="preserve">
+    <value>ביטול</value>
+  </data>
+  <data name="CNButtonChange" xml:space="preserve">
+    <value>שינוי</value>
+  </data>
+  <data name="CNHeader" xml:space="preserve">
+    <value>שינוי כינוי</value>
+  </data>
+  <data name="CNText" xml:space="preserve">
+    <value>הקלד כאן את הכינוי החדש שלך:
+(אם תוכנת SA-MP פתוחה, הכינוי יתעדכן אחרי שתפעיל אותה מחדש)</value>
+  </data>
+  <data name="EButtonClose" xml:space="preserve">
+    <value>סגור</value>
+  </data>
+  <data name="EError" xml:space="preserve">
+    <value>SA-MP Guard
+שגיאת תוכנה:</value>
+  </data>
+  <data name="EHeader" xml:space="preserve">
+    <value>שגיאה</value>
+  </data>
+  <data name="NVButtonClose" xml:space="preserve">
+    <value>יציאה</value>
+  </data>
+  <data name="NVHeader" xml:space="preserve">
+    <value>גרסה חדשה</value>
+  </data>
+  <data name="NVLink" xml:space="preserve">
+    <value>להורדה, יש להכנס לכתובת הבאה:</value>
+  </data>
+  <data name="NVMessage" xml:space="preserve">
+    <value>SA-MP Guard
+גרסה חדשה:</value>
+  </data>
+  <data name="NVNewest" xml:space="preserve">
+    <value>הגרסה הכי חדשה:</value>
+  </data>
+  <data name="NVOwn" xml:space="preserve">
+    <value>הגרסה שיש לך:</value>
+  </data>
+  <data name="NVWarning" xml:space="preserve">
+    <value>חובה להשתמש בגרסה החדשה כדי להפעיל את התוכנה.</value>
+  </data>
+  <data name="RCButtonCancel" xml:space="preserve">
+    <value>ביטול</value>
+  </data>
+  <data name="RCButtonOpenFolder" xml:space="preserve">
+    <value>פתח מיקום תיקיה</value>
+  </data>
+  <data name="RCButtonRemove" xml:space="preserve">
+    <value>מחק את כל הקבצים</value>
+  </data>
+  <data name="RCCheckBox" xml:space="preserve">
+    <value>אני מאשר את מחיקת הקבצים לצמיתות ואני יודע שיכול להיות שלא יהיה ניתן להחזיר אותם.</value>
+  </data>
+  <data name="RCDetails" xml:space="preserve">
+    <value>פרטי קובץ</value>
+  </data>
+  <data name="RCFileName" xml:space="preserve">
+    <value>שם הקובץ:</value>
+  </data>
+  <data name="RCHeader" xml:space="preserve">
+    <value>הסרת צ'יטים</value>
+  </data>
+  <data name="RCMessage" xml:space="preserve">
+    <value>הקבצים הבאים זוהו כקשורים לצ'יטים, ועליהם להמחק על מנת שלא תזוהה כצ'יטר:</value>
+  </data>
+  <data name="RCPath" xml:space="preserve">
+    <value>מיקום:</value>
+  </data>
+  <data name="ErrorSAMPCFG" xml:space="preserve">
+    <value>הקובץ sa-mp.cfg לא נמצא ולכן לא ניתן להמשיך.</value>
+  </data>
+  <data name="ErrorGameActive" xml:space="preserve">
+    <value>לא ניתן להתחבר כאשר המשחק GTA SA פתוח. סגור אותו, התחבר עם SA-MP Guard ואז פתח אותו מחדש.</value>
+  </data>
+  <data name="MsgAutoDisconnect" xml:space="preserve">
+    <value>נותקת אוטומטית מהשרת מאחר ולא שיחקת בו 2 דקות.</value>
+  </data>
+  <data name="ErrorName" xml:space="preserve">
+    <value>הכינוי שלך בתוכנה וב-SA-MP אינם זהים. הפוך אותם לשווים ונסה שוב.</value>
+  </data>
+  <data name="ButtonPlay" xml:space="preserve">
+    <value>התחל לשחק</value>
+  </data>
+  <data name="CDCFG" xml:space="preserve">
+    <value>מציאת קובץ CFG הושלמה.</value>
+  </data>
+  <data name="CDCheat" xml:space="preserve">
+    <value>מציאת צ'יטים עובדת. העבודה הושלמה.</value>
+  </data>
+  <data name="CDDocuments" xml:space="preserve">
+    <value>כתיבה במסמכים שלי עובדת...</value>
+  </data>
+  <data name="CDIncorrectVersion" xml:space="preserve">
+    <value>גרסה לא תקינה.</value>
+  </data>
+  <data name="CDInternet" xml:space="preserve">
+    <value>קריאה מהאינטרנט עובדת...</value>
+  </data>
+  <data name="CDLists" xml:space="preserve">
+    <value>רשימות הוגדרו בהצלחה...</value>
+  </data>
+  <data name="CDLoading" xml:space="preserve">
+    <value>תחילת טעינה...</value>
+  </data>
+  <data name="CDNickname" xml:space="preserve">
+    <value>כינוי נמצא...</value>
+  </data>
+  <data name="CDPath" xml:space="preserve">
+    <value>מוצא את תיקיית GTASA...</value>
+  </data>
+  <data name="CDRegistry" xml:space="preserve">
+    <value>כתיבה וקריאה ברגיסטרי עובדים...</value>
+  </data>
+  <data name="CDServers" xml:space="preserve">
+    <value>קריאת שרתים הושלמה...</value>
+  </data>
+  <data name="CDVersion" xml:space="preserve">
+    <value>נקראה גרסה: </value>
+  </data>
+  <data name="ErrorFiles" xml:space="preserve">
+    <value>אין הרשאה לכתיבה בקבצים במחשב זה. נסה לפתוח כמנהל.</value>
+  </data>
+  <data name="ErrorPrc" xml:space="preserve">
+    <value>לא ניתן להשתמש בתהליכים שבמחשב זה.</value>
+  </data>
+  <data name="ACAgain" xml:space="preserve">
+    <value>הצג לי שוב את ההסכם במידה והוא ישתנה בעתיד</value>
+  </data>
+  <data name="ACClose" xml:space="preserve">
+    <value>סגור</value>
+  </data>
+  <data name="ACContinue" xml:space="preserve">
+    <value>המשך</value>
+  </data>
+  <data name="ACHeader" xml:space="preserve">
+    <value>אישור שימוש במערכת SA-MP Guard</value>
+  </data>
+  <data name="ACRead" xml:space="preserve">
+    <value>קראתי, הבנתי ואני מאשר את ההסכם</value>
+  </data>
+  <data name="ACSource" xml:space="preserve">
+    <value>מקור</value>
+  </data>
+  <data name="ACText" xml:space="preserve">
+    <value>על מנת להפעיל את התוכנה, עליך לאשר את ההסכם הבא:</value>
+  </data>
+</root>

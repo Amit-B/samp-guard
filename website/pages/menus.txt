@@ -1,0 +1,49 @@
+Game Menus - תפריטי משחק
+רשימה זו מכילה כל אחד מהתפריטים הקיימים במשחק, לשימוש עם <a href="index.php?p=function&f=GetPlayerGameMenu">GetPlayerGameMenu</a> & <a href="index.php?p=function&f=SetPlayerGameMenu">SetPlayerGameMenu</a>.
+<br/><br/>
+<table style=\"width:100%;\" border="1">
+<tr><th>מספר התפריט</th><th>שם התפריט</th></tr>
+<tr><td>0</td><td>Stats</td></tr>
+<tr><td>1</td><td>Start game</td></tr>
+<tr><td>2</td><td>Brief</td></tr>
+<tr><td>3</td><td>Audio options</td></tr>
+<tr><td>4</td><td>Display settings</td></tr>
+<tr><td>5</td><td>Map</td></tr>
+<tr><td>6</td><td>Question start new game</td></tr>
+<tr><td>7</td><td>Game selection</td></tr>
+<tr><td>8</td><td>Question load mission pack</td></tr>
+<tr><td>9</td><td>Load game</td></tr>
+<tr><td>10</td><td>Delete game</td></tr>
+<tr><td>11</td><td>Question load save game </td></tr>
+<tr><td>12</td><td>Question delete game</td></tr>
+<tr><td>13</td><td>Loads first savegame</td></tr>
+<tr><td>14</td><td>Delete successful</td></tr>
+<tr><td>15</td><td>Delete successful</td></tr>
+<tr><td>16</td><td>Save game</td></tr>
+<tr><td>17</td><td>Question save</td></tr>
+<tr><td>18</td><td>Save successful</td></tr>
+<tr><td>19</td><td>Save successful</td></tr>
+<tr><td>20</td><td>Save game ok</td></tr>
+<tr><td>21</td><td>Load game ok</td></tr>
+<tr><td>22</td><td>Game affected, do not save</td></tr>
+<tr><td>23</td><td>Display default settings</td></tr>
+<tr><td>24</td><td>Audio default settings</td></tr>
+<tr><td>25</td><td>Controller default settings</td></tr>
+<tr><td>26</td><td>User track options </td></tr>
+<tr><td>28</td><td>Language</td></tr>
+<tr><td>29</td><td>Save game ok</td></tr>
+<tr><td>30</td><td>Save unsuccessful</td></tr>
+<tr><td>31</td><td>Load game (save unsuccessful)</td></tr>
+<tr><td>32</td><td>Load unsuccessful, file corrupted</td></tr>
+<tr><td>33</td><td>Options</td></tr>
+<tr><td>34</td><td>Main menu</td></tr>
+<tr><td>35</td><td>Quit game</td></tr>
+<tr><td>36</td><td>Controller setup</td></tr>
+<tr><td>37</td><td>Redefine controls</td></tr>
+<tr><td>38</td><td>Foot/vehicle controls</td></tr>
+<tr><td>39</td><td>Mouse settings</td></tr>
+<tr><td>40</td><td>Joypad settings</td></tr>
+<tr><td>41</td><td>Game running main menu </td></tr>
+<tr><td>42</td><td>Quit game</td></tr>
+<tr><td>43</td><td>Empty</td></tr>
+</table>

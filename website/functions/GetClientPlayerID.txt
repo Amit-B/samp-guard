@@ -1,0 +1,19 @@
+func|GetClientPlayerID(clientid);
+status|0
+category|Connections
+desc|מציאת האיידי במשחק של משתמש המחובר ל-SAMP-IL Guard לפי מספר ההתחברות שלו. ההפך מ-<a href="index.php?p=function&f=GetPlayerClientID">GetPlayerClientID</a>.
+changelog1|1.0 Beta 6:נוצרה רשמית
+param1|מספר ההתחברות למציאת האיידי במשחק
+note1|<b>הערה:</b> במצב שהאיידי לא נמצא, יוחזר INVALID_PLAYER_ID
+public OnPlayerCommandText(playerid,cmdtext[])
+{
+	// ...
+	if(!strcmp(cmdtext,"/guardusers",true))
+	{
+		new c = 0;
+		for(new i = 0; i < MAX_CONNECTIONS; i++) if(GetClientPlayerID(i) != INVALID_PLAYER_ID) c++;
+		printf("Total %d SAMP-IL Guard clients are playing right now");
+		return 1;
+	}
+	// ...
+}

@@ -1,0 +1,16 @@
+func|SetPlayerGravity(playerid,Float:gravity);
+status|0
+category|Player
+desc|שינוי כוח המשיכה עבור שחקן ספציפי (בניגוד לפונקציה SetGravity שמשנה עבור כל השרת).
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לשינוי כוח המשיכה
+param2|כוח המשיכה החדש
+note1|<b>הערה:</b> כוח המשיכה ברירת המחדל הוא 0.008 (או DEFAULT_GRAVITY).
+// from gtest_cmds.pwn
+if(equal(cmd,"/mygravity"))
+{
+	cmd = strtok(cmdtext,idx);
+	if(!strlen(cmd)) return SendClientMessage(playerid,white," Usage: /mygravity [gravity]");
+	SetPlayerGravity(playerid,floatstr(cmd));
+	return 1;
+}

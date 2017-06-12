@@ -1,0 +1,6 @@
+func|ResetPlayerCameraDistance(playerid);
+status|0
+category|Player
+desc|איפוס המרחק בין המצלמה לשחקן. לאחר השימוש בפונקציה הזו, השחקן שוב יוכל ללחוץ V ולראות את עצמו מהמרחק הברירת מחדל של GTA SA.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לאיפוס המרחק ממנו אל המצלמה

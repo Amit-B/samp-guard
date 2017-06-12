@@ -1,0 +1,8 @@
+func|SetMaxClients(max);
+status|3
+category|Connections
+desc|הפונקציה קובעת את מספר ההתחברויות המקסימלי לשרת דרך המערכת.
+changelog1|1.0 Beta 1:נוצרה רשמית
+changelog2|1.0-9:נמחקה כאשר הוחלט שמספר ההתחברויות המקסימלי יהיה קבוע בכל שרת (MAX_CLIENTS)
+param1|מגבלת ההתחברויות
+note1|<font color="red"><b>הפונקציה נמחקה:</b> בגרסה 1.0-9 הפונקציה הוסרה ולא ניתן להשתמש בה יותר.</font>

@@ -1,0 +1,20 @@
+func|SetVehicleSirens(vehicleid,activated);
+status|0
+category|Vehicle
+desc|הפונקציה משנה את מצב הפעילות של הסירנות של רכב.
+changelog1|1.1:נוצרה רשמית
+note1|<b>הערה:</b> כמו בכל פונקציות הרכבים, פונקציה זו תפעל רק על רכב שיש בו לפחות נוסע אחד שמשתמש ב-SA-MP Guard.
+param1|הרכב לשינוי מצב הסירנות
+param2|1 אם להפעיל את הסירנות או 0 אם לכבות אותן
+// from gtest_cmds.php
+if(equal(cmd,"/sirens"))
+{
+	new v = GetPlayerVehicleID(playerid);
+	if(v > 0)
+	{
+		SetVehicleSirens(v,!GetVehicleSirens(v));
+		SendClientMessage(playerid,white," Vehicle sirens toggled.");
+	}
+	else SendClientMessage(playerid,white," You're not in a vehicle.");
+	return 1;
+}

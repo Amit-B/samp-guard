@@ -1,0 +1,22 @@
+func|IsPlayerUsingJoypad(playerid);
+status|0
+category|Security
+desc|בדיקה האם השחקן משתמש בג'ויפד.
+changelog1|1.0 Beta 7:נוצרה רשמית
+changelog2|1.0 Beta 8:שם הפונקציה שונה מ-FindJoypad ל-IsPlayerUsingJoypad
+param1|השחקן לבדיקת ג'ויפד
+public OnPlayerCommandText(playerid,cmdtext[])
+{
+	// from gtest_cmds.txt
+	if(equal(cmd,"/hasjoypad"))
+	{
+		cmd = strtok(cmdtext,idx);
+		if(!strlen(cmd)) return SendClientMessage(playerid,white," Usage: /hasjoypad [id]");
+		new id = strval(cmd);
+		GetPlayerName(id,string,sizeof(string));
+		format(string,sizeof(string),"%s is currently %susing joypad.",string,IsPlayerUsingJoypad(id) ? ("") : ("not "));
+		SendClientMessage(playerid,white,string);
+		return 1;
+	}
+	return 0;
+}

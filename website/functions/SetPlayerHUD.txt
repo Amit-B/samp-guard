@@ -1,0 +1,7 @@
+func|SetPlayerHUD(playerid,bool:showing);
+status|0
+category|Player
+desc|הפונקציה מסתירה או מציגה את הסטאטס של השחקן שמוצג על המסך.
+changelog1|1.2:נוצרה רשמית
+param1|השחקן לשינוי
+param2|אמת אם להציג, או שקר אם להסתיר

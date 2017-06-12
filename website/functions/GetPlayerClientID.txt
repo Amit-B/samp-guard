@@ -1,0 +1,17 @@
+func|GetPlayerClientID(playerid);
+status|0
+category|Connections
+desc|מציאת מספר התחברות של משתמש. במערכת SAMP-IL Guard יש מספר סידורי לכל משתמש בדיוק כמו ב-SA-MP, ובאמצעות הפקודה הזו ניתן לדעת אותו.
+changelog1|1.0 Beta 3:נוצרה רשמית
+changelog2|1.0 Beta 6:שם הפונקציה שונה מ-GetClientID ל-GetPlayerClientID
+param1|השחקן למציאת האיידי
+note1|<b>הערה:</b> במצב שהאיידי לא נמצא, יוחזר מינוס 1 (INVALID_CLIENT_ID)
+new bool:first = false;
+public OnPlayerConnect(playerid)
+{
+	if(GetPlayerClientID(playerid) == 0 && !first)
+	{
+		SendClientMessage(playerid,0xff0000aa,"You're the first to connect to SAMP-IL Guard!");
+		first = true;
+	}
+}

@@ -1,0 +1,19 @@
+Radio Stations - תחנות רדיו
+זוהי רשימת תחנות הרדיו במשחק והמספרים של כל אחת מהן, לשימוש עם הפונקציה <a href="index.php?p=function&f=GetPlayerRadioStation">GetPlayerRadioStation</a>.
+<br/><br/>
+<table style=\"width:100%;\" border="1">
+<tr><th>מספר התחנה</th><th>שם התחנה</th></tr>
+<tr><td>1</td><td>Playback FM</td></tr>
+<tr><td>2</td><td>K Rose</td></tr>
+<tr><td>3</td><td>K-DST</td></tr>
+<tr><td>4</td><td>Bounce FM</td></tr>
+<tr><td>5</td><td>SF-UR</td></tr>
+<tr><td>6</td><td>Radio Los Santos</td></tr>
+<tr><td>7</td><td>Radio X</td></tr>
+<tr><td>8</td><td>CSR 103.9</td></tr>
+<tr><td>9</td><td>K-JAH West</td></tr>
+<tr><td>10</td><td>Master Sounds 98.3</td></tr>
+<tr><td>11</td><td>WCTR Talk Radio</td></tr>
+<tr><td>12</td><td>User Track Player</td></tr>
+<tr><td>13</td><td>Radio Off</td></tr>
+</table>

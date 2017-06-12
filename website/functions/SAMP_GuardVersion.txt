@@ -1,0 +1,8 @@
+func|SAMP_GuardVersion(version[],len);
+status|2
+category|sGuard
+desc|מציאת הגרסה הנוכחית של מערכת SAMP-IL Guard.
+changelog1|1.0 Beta 8:נוצרה רשמית
+changelog2|2.0:השם השתנה מ-SAMP_IL_GuardVersion ל-SAMP_GuardVersion
+param1|משתנה לשמירת הסטרינג
+param2|אורך המשתנה

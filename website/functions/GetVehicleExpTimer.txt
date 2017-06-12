@@ -1,0 +1,26 @@
+func|GetVehicleExpTimer(vehicleid);
+status|0
+category|Vehicle
+desc|הפונקציה מקבלת את הזמן הנותר לפיצוץ לרכב. מהרגע שלרכב יש פחות מ-250.0 חיים, מתחיל טיימר מ-0 עד 5000, בהגעה ל-5000 הרכב מתפוצץ.
+changelog1|1.1:נוצרה רשמית
+note1|<b>הערה:</b> כמו בכל פונקציות הרכבים, פונקציה זו תפעל רק על רכב שיש בו לפחות נוסע אחד שמשתמש ב-SA-MP Guard.
+param1|הרכב לבדיקה
+// from gtest_cmds.php
+if(equal(cmd,"/vinfo"))
+{
+	new v = GetPlayerVehicleID(playerid);
+	if(v > 0)
+	{
+		SendClientMessage(playerid,white," - Vehicle Info: -");
+		format(string,sizeof(string),"Sirens: %s",GetVehicleSirens(v) ? ("On") : ("Off"));
+		SendClientMessage(playerid,white,string);
+		format(string,sizeof(string),"Mass: %d",GetVehicleMass(v));
+		SendClientMessage(playerid,white,string);
+		format(string,sizeof(string),"Nitro: %d",GetVehicleNitro(v));
+		SendClientMessage(playerid,white,string);
+		format(string,sizeof(string),"Explosion Timer: %d",GetVehicleExpTimer(v));
+		SendClientMessage(playerid,white,string);
+	}
+	else SendClientMessage(playerid,white," You're not in a vehicle.");
+	return 1;
+}

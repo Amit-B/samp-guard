@@ -1,0 +1,6 @@
+func|Float:GetPlayerMaxHealth(playerid);
+status|2
+category|Player
+desc|מציאת גודל מד החיים של השחקן כרגע. הערך מוחזר כמספר עשרוני.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לבדיקה.

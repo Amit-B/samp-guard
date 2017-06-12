@@ -1,0 +1,13 @@
+func|SavePlayerName(playerid,name[]);
+status|2
+category|Settings
+desc|עד היום כששינינו כינוי ב-SA-MP היינו צריכים לעדכן את זה גם אחרי שיצאנו מהשרת. באמצעות הפונקציה הזו, ניתן לשמור ב-SA-MP כינוי חדש, ובכך להקל על השחקן בלשנות את הכינוי גם בתוכנה של SA-MP.
+changelog1|1.0 Beta 4:נוצרה רשמית
+param1|השחקן לשמירת הכינוי
+param2|הכינוי לשמירה
+stock ChangeName(playerid,newname[])
+{
+	// ...
+	SetPlayerName(playerid,newname);
+	SavePlayerName(playerid,newname);
+}

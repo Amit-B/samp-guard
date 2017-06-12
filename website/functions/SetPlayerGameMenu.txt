@@ -1,0 +1,12 @@
+func|SetPlayerGameMenu(playerid,menuid);
+status|2
+category|Player
+desc|שינוי <a href="index.php?p=page&i=menus">התפריט הנוכחי של המשחק</a>. באמצעות אופציה זו ניתן להעביר שחקן לתפריט כלשהו של המשחק, כמו המפה, הגדרות, אסקייפ מניו ועוד.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לשינוי התפריט
+param2|מספר התפריט
+public OnPlayerCommandText(playerid,cmdtext[])
+{
+	if(!strcmp(cmdtext,"/viewmap",true)) return SetPlayerGameMenu(playerid,5), 1;
+	return 0;
+}

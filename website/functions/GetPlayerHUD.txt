@@ -1,0 +1,6 @@
+func|GetPlayerHUD(playerid);
+status|0
+category|Player
+desc|הפונקציה בודקת האם הסטאטס של השחקן מוצג במסך.
+changelog1|1.2:נוצרה רשמית
+param1|השחקן לבדיקה

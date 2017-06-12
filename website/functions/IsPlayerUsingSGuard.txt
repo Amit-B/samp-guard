@@ -1,0 +1,20 @@
+func|IsPlayerUsingSGuard(playerid);
+status|0
+category|sGuard
+desc|בדיקה האם שחקן מחובר למערכת SAMP-IL Guard או לא. יוחזר 1 אם כן, או 0 אם לא.
+changelog1|1.0 Beta 2:נוצרה רשמית
+param1|השחקן לבדיקה
+note1|<b>הערה:</b> הפונקציה הזו מתעדכנת דרך הפילטרסקריפט guard.amx. מכיוון שפילטרסקריפט רץ אחרי מוד, אם תשתמשו בפונקציה הזו ב-OnPlayerConnect היא לא תעבוד!
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+	// ...
+	if(!strcmp(cmdtext,"/stats",true))
+	{
+		new string[64];
+		format(string,sizeof(string),"Kills: %d || Deaths: %d",Kills[playerid],Deaths[playerid]);
+		SendClientMessage(playerid,0xffffffaa,string);
+		format(string,sizeof(string),"SAMP-IL Guard: %s",IsPlayerUsingSGuard(playerid) ? ("ON") : ("OFF"));
+		SendClientMessage(playerid,0xffffffaa,string);
+	}
+	// ...
+}

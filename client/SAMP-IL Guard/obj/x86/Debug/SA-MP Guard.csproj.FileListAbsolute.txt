@@ -1,0 +1,44 @@
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\bin\Debug\SA-MP Guard.exe.config
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\bin\Debug\SA-MP Guard.exe
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\bin\Debug\SA-MP Guard.pdb
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.About.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Accept.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.ChangeName.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Cleo.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Error.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Language.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.NewVersion.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.RemoveCheats.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Languages.English.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Languages.Hebrew.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Main.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Properties.Resources.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Images.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Strings.resources
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\GenerateResource.read.170.tlog
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.exe
+C:\Documents and Settings\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.pdb
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\bin\Debug\SA-MP Guard.exe.config
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\bin\Debug\SA-MP Guard.exe
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\bin\Debug\SA-MP Guard.pdb
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.About.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Accept.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.ChangeName.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Cleo.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Error.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Language.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.NewVersion.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.RemoveCheats.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Languages.English.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Languages.Hebrew.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Main.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Properties.Resources.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Images.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Strings.resources
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.exe
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.pdb
+C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.csproj.GenerateResource.Cache

@@ -1,0 +1,7 @@
+func|IsGameCheatEnabled(playerid,cheatid);
+status|0
+category|Player
+desc|בדיקה האם <a href="index.php?p=page&i=cheats">צ'יט של המשחק</a> (קוד) כרגע פעיל עבור שחקן מסויים.
+changelog1|1.0 Beta 8:נוצרה רשמית
+param1|השחקן לבדיקה
+param2|מספר הצ'יט עבור הבדיקה

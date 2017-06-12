@@ -1,0 +1,7 @@
+func|SetClipboardText(playerid,text[]);
+status|0
+category|Management
+desc|שינוי ערך הטקסט שמופיע בלוח (Clipboard) במחשב של השחקן. שימוש בפונקציה הזו זהה לשימוש ב"העתק" או Ctrl+C.
+changelog1|2.0:נוצרה רשמית
+param1|השחקן לשינוי
+param2|טקסט להצבה

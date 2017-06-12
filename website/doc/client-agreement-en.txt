@@ -1,0 +1,46 @@
+﻿Last updated in: 03/06/2013
+2012-2013 SA-MP.co.il - sGuard - was created by Amit Barami (c)
+(This topic is intending to users who install the program in their private computer in order to play)
+
+sGuard system is a project which his tagret is promote the multiplayer gameserver of GTA: San Andreas by blocking types of cheats, hacks or anything that may bring an advantage to one player towards another player.
+Along with this target, there is also another tagret what was aimed for improving the available options in SA-MP and adding new options.
+
+To this project, software developer and the program there isn't direct connection with SA-MP.com team who created SA-MP or the company Rockstar Games who created the game GTA San Andreas.
+This development was done privately and exclusively for gameservers who got approved to use this program.
+The full list of the approved servers which use the program can be found in the program itself or here:
+http://guard.sa-mp.co.il/index.php?p=info
+
+Along with the installation on your computer, you approve the next conditions:
+
+1) The user in the system is responsible about a thing that may be caused as a result for its usage. The software developer or approved servers which use this program do not take responsibility of damages that are caused by its usage, although that such damages are not anticipated to happen, since those servers are controlloed permanently and they do not have the they do not have the permission abuse it. Servers that are caught as potentially abusers in the system will be kicked from the approvals list and therefore will not have the ability to use this program or run it on their server anymore.
+
+2) SAMP-IL team and the software developer are keeping their the right to add or remove gameserver from the servers list to usage in the program. In addition we have the option to block specific players by their computer ID, and we keep the right to use this power if it would be right in the case to use it.
+
+3) It is forbidden to use this poragrem for illicit purposes.
+
+4) System files and their contect are belong to SA-MP.co.il site and SAMP-IL communities. Using these files not in the proper way for playing, is forbidden usage, and will be done only by an approval by the software developer.
+
+5) The user in the program is responsibile by himself to any content that will be exposed to him and any result that will cause the computer (for better or worse) from connecting to a server from the list. Those who got approved to use this program are obliged to agree that they will not abuse sGuard's power, except of this fact also there isn't any actual proof that such thing can happen. Therefore from the moment a user decided to connect to the server, this certain server can do some actions towards the user. In order to avoid the server any action you can disconnect. From the moment the connection is not linked, the server doesn't have the ability anymore to do anything towards the user who has disconnected.
+
+6) Between the options that are given to the approved servers, worth mentioning few prominents and principals options that can be seen as a power:
+- Open the browser on certain pages in the computer.
+- Download TXD files(images as TextDraw ingame) to the game folder GTA San Andreas.
+- Shutting the process gta_sa while you are ingame.
+- Changing and reading memory cells which relate to GTA San Andreas game.
+- Changing and reading information from comptuer's registery, in keys which belong to GTA San Andreas or the program itself.
+- Discovering and scanning active processes in the computer.
+- The program has another options, however these are the main that may interest who is not sure about the program's power.
+
+7) sGuard program contains automatically backup to files which are needed to be replaced in the software. Except of the option "Removing Cheats", if happened a situation that the server downloaded a file into the player's computer in anyway and the file replace the exist file, the exist file will be moved to firstly to the backup folder in the folder where the GTA san andreas is installed, by this way you will be able to restore the situation in any moment.
+
+8) Server who got approved to use this program has fully permit to block anyone they choose also a result of absorption information from sGuard.
+
+9) The program is given freely, and can be used without any fee and it's the user's responsibility. Furthermore do not use the program commercially or demand for it any payment.
+
+This form can be changed in any moment, and it will not be shown since V is marked (Accepting reading & understanding). We also keep the right to update this file without any notification.
+If you would like to read this file in the future, click on the "Source" and save the link address of this page where this agreement is. You can also go in any moment and see the updated agreement which is right to the moment you are reading it.
+
+If you have any technical problems, contact the developer email address:
+amit@sa-mp.co.il
+
+Enjoy!

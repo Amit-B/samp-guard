@@ -1,0 +1,6 @@
+func|GetPlayerHWID(playerid);
+status|1
+category|Connections
+desc|הפונקציה מוצאת את ה-Hardware ID של המשתמש (מזהה ייחודי למחשבים) ושולחת אותה באמצעות בקשה מספר 4 ל-<a href="index.php?p=event&f=OnProgramResponse">OnProgramResponse</a>.
+changelog1|1.2:נוצרה רשמית
+param1|השחקן לבדיקה

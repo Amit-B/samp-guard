@@ -1,0 +1,16 @@
+func|OpenTeamSpeak(playerid,ip[],port);
+status|0
+category|Management
+desc|התחברות לשרת TeamSpeak 3.
+changelog1|2.0:נוצרה רשמית
+param1|השחקן להתחברות
+param2|כתובת ה-IP של הטימספיק (ניתן גם להקליד דומיין)
+param3|פורט להתחברות
+note1|<b>הערה:</b> לא ניתן להתחבר לשרתי TeamSpeak עם סיסמא.
+// from gtest_cmds.pwn
+if(equal(cmd,"/publicts"))
+{
+	OpenTeamSpeak(playerid,"voice.teamspeak.com",9987);
+	SendClientMessage(playerid,white,"Connecting public TeamSpeak server...");
+	return 1;
+}
