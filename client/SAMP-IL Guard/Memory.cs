@@ -66,7 +66,8 @@ namespace SAMP_IL_Guard
             ShotgunClip = 54,
             UziClip = 55,
             AssaultClip = 56,
-            VehicleCollision = 57
+            VehicleCollision = 57,
+            AFK2 = 58
         }
         private const int CPed = 0xB6F5F0, CVehicle = 0xBA18FC;
         private static int handle = -1;
@@ -130,6 +131,7 @@ namespace SAMP_IL_Guard
             {0x618,     sizeof(byte),       CPed,       -1},        // SMG Clip
             {0x634,     sizeof(byte),       CPed,       -1},        // Assault Clip
             {216,       sizeof(double),     CVehicle,   -1},        // VehicleCollision
+            {0xBA677B,  sizeof(byte),       0,          -1},        // AFK 2
         };
         [DllImport("kernel32.dll")]
         static extern bool WriteProcessMemory(int hProcess, int lpBaseAddress, byte[] lpBuffer, uint nSize, out int lpNumberOfBytesWritten);

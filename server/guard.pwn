@@ -599,8 +599,10 @@ stock Float:fclamp(Float:n,Float:mn,Float:mx)
 }
 stock strspace(str[])
 {
-	if(!strlen(str)) format(str,2," ");
-	return str;
+	new str_ret[256];
+	format(str_ret,sizeof(str_ret),str);
+	if(!strlen(str_ret)) format(str_ret,2," ");
+	return str_ret;
 }
 //============================= [ Function List ] ==============================
 #define isClientAPlayer(%1) (%1 >= 0 && %1 < MAX_CONNECTIONS_ && clientInfo[%1][gameID] != INVALID_PLAYER_ID && playerInfo[clientInfo[%1][gameID]][idleTime] < 6)
@@ -611,8 +613,8 @@ stock strspace(str[])
 // REMOVED: function<SetMaxClients(max)> return socket_set_max_connections(S,MAX_CONNECTIONS_ = max), 1;
 function<_,AllowClientsOnly(bool:a)> return clientsOnly = a, 1;
 function<_,IsPlayerUsingSGuard(playerid)> return _:isPlayerAClientNAFK(playerid);
-function<_,IsPlayerRunningProcess(playerid,const procesname[])> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("proc:%s",procesname));
-function<_,GetProcesses(playerid,const seperator[])> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("proclist:%s",seperator));
+function<_,IsPlayerRunningProcess(playerid,const procesname[])> if(isPlayerAClientNAFK(playerid)) SendToClient(playerInfo[playerid][clientID],f("proc:%s",procesname));
+function<_,GetProcesses(playerid,const seperator[])> if(isPlayerAClientNAFK(playerid)) SendToClient(playerInfo[playerid][clientID],f("proclist:%s",seperator));
 function<_,FindCheats(playerid)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],"cheats");
 function<_,FindCleoMods(playerid)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],"cleo");
 function<_,GetPlayerClientID(playerid)> return playerid >= 0 && playerid < MAX_PLAYERS ? playerInfo[playerid][clientID] : INVALID_CLIENT_ID;
@@ -620,39 +622,39 @@ function<_,GetClientPlayerID(clientid)> return clientid >= 0 && clientid < MAX_C
 function<_,OpenWebpage(playerid,url[])> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("webpage:%s",url));
 function<_,SavePlayerName(playerid,name[])> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("rename:%s",name));
 function<_,TXD_Download(playerid,txdurl[])> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("dltxd:%s",txdurl));
-function<_,QuitFromGame(playerid)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],"quit");
-function<_,IsPlayerUsingJoypad(playerid)> return isPlayerAClient(playerid) ? (_:(!playerInfo[playerid][infoArray_Int][5])) : -1;
+function<_,QuitFromGame(playerid)> if(isPlayerAClientNAFK(playerid)) SendToClient(playerInfo[playerid][clientID],"quit");
+function<_,IsPlayerUsingJoypad(playerid)> return isPlayerAClientNAFK(playerid) ? (_:(!playerInfo[playerid][infoArray_Int][5])) : -1;
 function<_,ForceRemoveJoypad(playerid)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],"removejoypad");
-function<Float,GetPlayerGravity(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Float][0] : -1.0;
+function<Float,GetPlayerGravity(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Float][0] : -1.0;
 function<_,SetPlayerGravity(playerid,Float:gravity)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("gravity:%f",gravity));
-function<_,GetPlayerRadioStation(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][0] : -1;
-function<_,GetPlayerControlState(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][6] : -1;
-function<_,GetPlayerJumpState(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][7] : -1;
-function<_,GetPlayerRunState(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][8] : -1;
-function<_,GetPlayerFireproof(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][1] : -1;
+function<_,GetPlayerRadioStation(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][0] : -1;
+function<_,GetPlayerControlState(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][6] : -1;
+function<_,GetPlayerJumpState(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][7] : -1;
+function<_,GetPlayerRunState(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][8] : -1;
+function<_,GetPlayerFireproof(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][1] : -1;
 function<_,SetPlayerFireproof(playerid,bool:enabled)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("fireproof:%d",_:enabled));
-function<_,GetPlayerLock(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][9] : -1;
+function<_,GetPlayerLock(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][9] : -1;
 function<_,SetPlayerLock(playerid,bool:locked)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("lock:%d",_:locked));
-function<_,GetPlayerGameMenu(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][10] : -1;
+function<_,GetPlayerGameMenu(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][10] : -1;
 function<_,SetPlayerGameMenu(playerid,menuid)> if(isPlayerAClient(playerid) && menuid >= 0 && menuid <= 43) SendToClient(playerInfo[playerid][clientID],f("menu:%d",menuid));
 function<_,EnableGameCheat(playerid,cheatid,bool:enable)> if(isPlayerAClient(playerid) && cheatid >= 1 && cheatid <= 4) SendToClient(playerInfo[playerid][clientID],f("cheat:%d:%d",cheatid,_:enable));
-function<_,IsGameCheatEnabled(playerid,cheatid)> return isPlayerAClient(playerid) && cheatid >= 1 && cheatid <= 4 ? playerInfo[playerid][infoArray_Int][GetCheatArrayPos(cheatid)] : -1;
-function<_,GetPlayerTownID(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][11] : -1;
-function<Float,GetPlayerMaxHealth(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Float][1] : -1.0;
+function<_,IsGameCheatEnabled(playerid,cheatid)> return isPlayerAClientNAFK(playerid) && cheatid >= 1 && cheatid <= 4 ? playerInfo[playerid][infoArray_Int][GetCheatArrayPos(cheatid)] : -1;
+function<_,GetPlayerTownID(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][11] : -1;
+function<Float,GetPlayerMaxHealth(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Float][1] : -1.0;
 function<_,SetPlayerMaxHealth(playerid,Float:maxhealth)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("maxhealth:%f",maxhealth));
-function<_,GetPlayerWaveLevel(playerid)> return isPlayerAClient(playerid) ? floatround(playerInfo[playerid][infoArray_Float][2]) : -1;
+function<_,GetPlayerWaveLevel(playerid)> return isPlayerAClientNAFK(playerid) ? floatround(playerInfo[playerid][infoArray_Float][2]) : -1;
 function<_,SetPlayerWaveLevel(playerid,wavelevel)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("waves:%f",float(wavelevel)));
 function<_,SetPlayerCameraDistance(playerid,Float:distance)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("camera:%f",distance));
 function<_,ResetPlayerCameraDistance(playerid)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],"camerareset");
 function<_,SetPlayerRain(playerid)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],"rain");
 function<_,SAMP_GuardVersion(version[],len)> return strpack(VERSION,version,len);
-function<_,GetPlayerInfiniteRun(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][12] : -1;
+function<_,GetPlayerInfiniteRun(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][12] : -1;
 function<_,SetPlayerInfiniteRun(playerid,enabled)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("infiniterun:%d",_:bool:enabled));
 function<_,CloseSGuardConnection(playerid)> if(isPlayerAClient(playerid)) prvCloseSGuardConnection(playerid);
-function<_,GetPlayerVolume(playerid,volumetype)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][!volumetype ? 13 : 14] : -1;
-function<_,GetSAMPInfo(playerid,keyname[])> return isPlayerAClient(playerid) && GetKeyNumber(keyname) != -1 ? playerInfo[playerid][infoArray_SAMP][GetKeyNumber(keyname)] : -1;
+function<_,GetPlayerVolume(playerid,volumetype)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][!volumetype ? 13 : 14] : -1;
+function<_,GetSAMPInfo(playerid,keyname[])> return isPlayerAClientNAFK(playerid) && GetKeyNumber(keyname) != -1 ? playerInfo[playerid][infoArray_SAMP][GetKeyNumber(keyname)] : -1;
 // REMOVED: function<_,SetSAMPInfo(playerid,keyname[],value)> if(isPlayerAClient(playerid) && GetKeyNumber(keyname) != -1) SendToClient(playerInfo[playerid][clientID],f("updatecfg:%s:%d",keyname,value));
-function<_,IsPlayerAFK(playerid)> return isPlayerAClient(playerid) ? (_:(playerInfo[playerid][infoArray_Int][15] > 0)) : 0;
+function<_,IsPlayerAFK(playerid)> return isPlayerAClientNAFK(playerid) ? (_:(playerInfo[playerid][infoArray_Int][15] > 0)) : 0;
 function<_,GetVehicleSirens(vehicleid)> return isValidVehicle(vehicleid) ? (_:(playerInfo[vDr[vehicleid]][infoArray_Int][16] == 208)) : 0;
 function<_,SetVehicleSirens(vehicleid,activated)> if(isValidVehicle(vehicleid)) SendToClient(playerInfo[vDr[vehicleid]][clientID],f("vsirens:%d",bool:activated ? 208 : 80));
 function<_,GetVehicleHorn(vehicleid)> return isValidVehicle(vehicleid) ? playerInfo[vDr[vehicleid]][infoArray_Int][17] : 0;
@@ -663,27 +665,27 @@ function<_,GetVehicleExpTimer(vehicleid)> return isValidVehicle(vehicleid) ? flo
 function<_,SetVehicleExpTimer(vehicleid,exptime)> if(isValidVehicle(vehicleid)) SendToClient(playerInfo[vDr[vehicleid]][clientID],f("explodetimer:%d.0",exptime));
 function<Float,GetTrainSpeed(vehicleid)> return isValidVehicle(vehicleid) ? playerInfo[vDr[vehicleid]][infoArray_Float][6] : 0.0;
 function<_,SetTrainSpeed(vehicleid,Float:trainspeed)> if(isValidVehicle(vehicleid)) SendToClient(playerInfo[vDr[vehicleid]][clientID],f("trainspeed:%f",fclamp(trainspeed,-1.0,1.0)));
-function<_,GetPlayerMoonSize(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][18] : -1;
+function<_,GetPlayerMoonSize(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][18] : -1;
 function<_,SetPlayerMoonSize(playerid,moonsize)> if(isPlayerAClient(playerid) && moonsize >= 0) SendToClient(playerInfo[playerid][clientID],f("moonsize:%d",moonsize));
 function<_,ResetPlayerMoonSize(playerid)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],"moonsize:3");
 function<_,LockPlayerMoonSize(playerid,bool:lock)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("moonsizelock:%d",_:lock));
-function<_,GetPlayerVision(playerid,vistype)> return isPlayerAClient(playerid) && (vistype == 0 || vistype == 1) ? playerInfo[playerid][infoArray_Int][20+vistype] : -1;
+function<_,GetPlayerVision(playerid,vistype)> return isPlayerAClientNAFK(playerid) && (vistype == 0 || vistype == 1) ? playerInfo[playerid][infoArray_Int][20+vistype] : -1;
 function<_,SetPlayerVision(playerid,vistype,activated)> if(isPlayerAClient(playerid) && (vistype == 0 || vistype == 1)) SendToClient(playerInfo[playerid][clientID],f("vision:%d:%d",vistype,_:bool:activated));
-function<_,GetPlayerHUD(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][22] : -1;
+function<_,GetPlayerHUD(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][22] : -1;
 function<_,SetPlayerHUD(playerid,bool:showing)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("hud:%d",_:showing));
 function<_,GetPlayerHWID(playerid)> if(isPlayerAClient(playerid)) CallRemoteFunction("OnProgramResponse","iis",playerInfo[playerid][clientID],REQUEST_HWID,strspace(playerInfo[playerid][hwid]));
 function<_,TXD_Exist(playerid,txdname[])> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("txdexist:%s",txdname));
 function<_,OpenTeamSpeak(playerid,ip[],port)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("teamspeak:%s:%d",ip,port));
 function<_,SetClipboardText(playerid,text[])> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("clipboard:%s",text));
-function<_,GetPlayerBlur(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][23] : -1;
+function<_,GetPlayerBlur(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][23] : -1;
 function<_,SetPlayerBlur(playerid,level)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("blur:%d",level));
-function<_,GetPlayerWidescreen(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][29] : -1;
+function<_,GetPlayerWidescreen(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][29] : -1;
 function<_,SetPlayerWidescreen(playerid,bool:toggle)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("widescreen:%d",_:toggle));
 function<_,GetPlayerText(playerid)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],"gettext");
-function<_,GetPlayerStamina(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][24] : -1;
+function<_,GetPlayerStamina(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][24] : -1;
 function<_,SetPlayerStamina(playerid,stamina)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("stamina:%d",stamina));
-function<Float,GetPlayerRotationSpeed(playerid)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Float][7] : -1.0;
+function<Float,GetPlayerRotationSpeed(playerid)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Float][7] : -1.0;
 function<_,SetPlayerRotationSpeed(playerid,Float:speed)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("rotspeed:%f",speed));
-function<_,GetPlayerClipAmmo(playerid,clipslot)> return isPlayerAClient(playerid) ? playerInfo[playerid][infoArray_Int][25 + clamp(clipslot,1,4) - 1] : -1;
+function<_,GetPlayerClipAmmo(playerid,clipslot)> return isPlayerAClientNAFK(playerid) ? playerInfo[playerid][infoArray_Int][25 + clamp(clipslot,1,4) - 1] : -1;
 function<_,SetPlayerClipAmmo(playerid,clipslot,ammo)> if(isPlayerAClient(playerid)) SendToClient(playerInfo[playerid][clientID],f("clipammo:%d:%d",clamp(clipslot,1,4),ammo));
 // EOF

@@ -42,3 +42,33 @@ C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard
 C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.exe
 C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.pdb
 C:\Users\Amit\Desktop\עמית\פרוייקטים\C#\SAMP-IL Guard\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.csproj.GenerateResource.Cache
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\SA-MP Guard.exe.config
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\SA-MP Guard.exe
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\SA-MP Guard.pdb
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.csprojResolveAssemblyReference.cache
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.About.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Accept.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.ChangeName.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Cleo.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Error.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.Language.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.NewVersion.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Forms.RemoveCheats.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Languages.English.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Languages.Hebrew.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Main.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Properties.Resources.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Images.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SAMP_IL_Guard.Strings.resources
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.csproj.GenerateResource.Cache
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.csproj.CoreCompileInputs.cache
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.exe
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\obj\x86\Debug\SA-MP Guard.pdb
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\UIAutomationClient.dll
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\UIAutomationProvider.dll
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\UIAutomationTypes.dll
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\WindowsBase.dll
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\he\UIAutomationClient.resources.dll
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\he\UIAutomationProvider.resources.dll
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\he\UIAutomationTypes.resources.dll
+C:\Users\Amit\Desktop\עמית\פרויקטים\עבודות כלליות\samp-guard\client\SAMP-IL Guard\bin\Debug\he\WindowsBase.resources.dll

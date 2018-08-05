@@ -19,6 +19,7 @@ using System.Resources;
 using Microsoft.Win32;
 using System.Threading;
 using System.Security.Principal;
+using System.Windows.Automation;
 // 543, 419
 namespace SAMP_IL_Guard
 {
@@ -39,11 +40,12 @@ namespace SAMP_IL_Guard
                 hasArgs = true;
                 UpdateMyLanguage();
             }
+            Automation.AddAutomationFocusChangedEventHandler(OnFocusChangedHandler);
         }
-        private Socket s = null;
+        private static Socket s = null;
         private List<string> serverlist = new List<string>(), dlls = new List<string>();
         private string url = Strings.Site, crashfile = string.Empty, agreement = string.Empty, lastsent = string.Empty, failmsg = string.Empty, sampcfgpath = string.Empty, hwid = string.Empty;
-        private int clientID = -1, playerID = -1, uptime = 0, connecting = 0, moonsize = 0, collcd = 0, serverID = -1;
+        private static int clientID = -1, playerID = -1, uptime = 0, connecting = 0, moonsize = 0, collcd = 0, serverID = -1;
         private double collmax = 0.0;
         private bool connected = false, exitAfterDisconnect = false, ws = true, heb = true, lockmoon = false;
         private WebClient wc = new WebClient();
@@ -455,7 +457,7 @@ namespace SAMP_IL_Guard
                                 Memory.ValueOf(Memory.ReadMemory(Memory.GTAMemoryAddresses.InfiniteRun)).ToString(),
                                 Memory.ValueOf(Memory.ReadMemory(Memory.GTAMemoryAddresses.RadioVolume)).ToString(),
                                 Memory.ValueOf(Memory.ReadMemory(Memory.GTAMemoryAddresses.SfxVolume)).ToString(),
-                                Memory.ValueOf(Memory.ReadMemory(Memory.GTAMemoryAddresses.AFK)).ToString(),
+                                (IsAFK() ? 1 : 0).ToString(),
                                 Memory.ValueOf(Memory.ReadMemory(Memory.GTAMemoryAddresses.VehicleSirens)).ToString(),
                                 Memory.ValueOf(Memory.ReadMemory(Memory.GTAMemoryAddresses.VehicleHorn)).ToString(),
                                 Memory.ValueOf(Memory.ReadMemory(Memory.GTAMemoryAddresses.MoonSize)).ToString(),
@@ -475,6 +477,7 @@ namespace SAMP_IL_Guard
                         for (int i = 0; i < info.Length; i++)
                             toSend += " " + info[i];
                         tatata = 102;
+                        this.Text = IsAFK().ToString();
                     }
                     else if (uptime % 3 == 1)
                     {
@@ -530,6 +533,26 @@ namespace SAMP_IL_Guard
             catch (Exception ex)
             {
                 Func.Error(L("ErrorSent") + "\n" + ex.Message + "\n" + tatata, true);
+            }
+        }
+        public static bool FocusGTASA = true;
+        public static bool IsAFK() =>
+            Memory.ValueOf(Memory.ReadMemory(Memory.GTAMemoryAddresses.AFK)).ToString() != "0" ||
+            Memory.ValueOf(Memory.ReadMemory(Memory.GTAMemoryAddresses.AFK2)).ToString() != "0" ||
+            !FocusGTASA;
+        private static void OnFocusChangedHandler(object src, AutomationFocusChangedEventArgs args)
+        {
+            if (IsConnected() && Variables.proc != null)
+            {
+                var element = src as AutomationElement;
+                if (element != null)
+                {
+                    var name = element.Current.Name;
+                    var id = element.Current.AutomationId;
+                    var processId = element.Current.ProcessId;
+                    using (Process process = Process.GetProcessById(processId))
+                        FocusGTASA = process.Id == Variables.proc.Id;
+                }
             }
         }
         public bool Connect(string ip, int port)
@@ -1111,7 +1134,7 @@ namespace SAMP_IL_Guard
         {
             Func.Warning();
         }
-        private bool IsConnected()
+        private static bool IsConnected()
         {
             return Variables.proc != null && playerID != -1 && clientID != -1 && s != null;
         }
